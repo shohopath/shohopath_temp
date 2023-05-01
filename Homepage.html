@@ -123,9 +123,65 @@
    } 
 }
 
-.card.w-100.mb-3 {
-  height: 30%;
-} 
+
+/*news & updates section*/
+
+#card2 {
+  margin-bottom: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+#card2 {
+  height: 100%;
+}
+
+#card2 .card-title {
+  font-size: 1.5rem;
+}
+
+#card2 p {
+  font-size: 1.2rem;
+}
+
+#card2 .card-footer2 {
+  background-color: #f8f9fa;
+  border-top: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #card2 {
+    
+    height: auto;
+  }
+}
+/* Card title styles */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Card body styles */
+.card-body {
+  padding: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Card footer styles */
+.card-footer2 {
+  background-color: #f8f9fa;
+  padding: .75rem 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: right;
+  font-size: 0.875rem;
+  color: #666;
+}
   
  .btn { 
    display: inline-block; 
@@ -397,22 +453,22 @@
 
  <br> 
 
- <!-- News & Updates Start--> 
- <div class="container-fluid">
+<!-- News & Updates Start-->
+<div class="container-fluid">
   <div class="position-relative">
     <h2 class="mt-4">News & Updates</h2>
     <br>
-    <div class="card w-100 mb-3">
+    <div class="card w-100 mb-3" id="card2">
       <div class="row g-0">
         <div class="col-md-4">
           <h2 class="card-title px-3 py-3">Headline</h2>
-          <p class="ms-3 me-1">abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz</p>
+          <p class="ms-3 me-1 fs-4">abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz</p>
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <p class="card-text px-3 py-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. You can add more text here to increase the size of the card as desired.</p>
           </div>
-          <div class="card-footer2">
+          <div class="card-footer2 d-flex justify-content-end">
             <small class="text-muted">Last updated on ' . $date_added . '</small>
           </div>
         </div>
@@ -420,12 +476,13 @@
     </div>
   </div>
 </div>
- <!-- News & Updates End--> 
+<!-- News & Updates End-->
+ 
  <br> 
  <!-- Footer Start--> 
  <div class="container-fluid"> 
    <footer> 
-     <div class="container p-4"> 
+     <div class="container w-100 p-4"> 
        <div class="row"> 
          <div class="col-lg-6 col-md-12 mb-4"> 
            <h5 class="mb-3 text-dark">Footer content</h5> 

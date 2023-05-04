@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
+    outline: none !important;
  }
  
  :root{
   --sky-blue: #2DAAE1;
   --light-sky-blue: #EFF3FF;
   --deep-blue: #1070B7;
+  --deep-blue-2: #0f5286;
+  --pink-red: #aa2c63;
  }
  
  /* Body Styles */ 
@@ -110,16 +114,85 @@
 
   .home-image-cont .right {
     width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .home-image-cont .right img {
+    height: 95%;
   }
 
   .home-image-cont .left {
-    display: flex;
     width: 60%;
+    /* height: 60%; */
     min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-image-cont .left .left-main-cont {
+    width: 70%;
+    /* height: 60%; */
+    text-align: left;
+  }
+
+  .home-image-cont .left .left-main-cont header {
+    background: none;
+    text-align: left;
+  }
+
+  .home-image-cont .left .left-main-cont header h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-left: 5px;
+    top: 12.5px;
+  }
+
+
+  .home-image-cont .left .left-main-cont header h1 {
+    font-size: 6rem;
+    color: var(--deep-blue-2);
+  }
+
+  .home-image-cont .left .left-main-cont main {
+    /* display: flex; */
+    margin-top: 20px;
+    width: 90%;
+    padding-left: 30px;
+    font-size: 1.2rem;
+  }
+
+  .home-image-cont .left .left-main-cont main::before {
+    content: '';
+    height: 100%;
+    width: 8px;
+    border-radius: 8px;
+    background: var(--deep-blue-2);
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  
+  .home-image-cont .left .left-main-cont footer .upload_btn {
+    margin-top: 20px;
+    border-radius: 8px;
+    background: var(--deep-blue);
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: none;
+  }
+
+  .home-image-cont .left .left-main-cont footer .upload_btn:hover {
+    background: var(--pink-red);   
+    transition: .2s ease-in-out;
   }
    
   /* Header Styles */ 
-  header { 
+  /* header { 
     background-color: #347a32; 
     padding: 10px; 
     text-align: center; 
@@ -129,7 +202,7 @@
     margin: 0; 
     font-size: 36px; 
     color: white; 
-  } 
+  }  */
    
   /* Card Styles */ 
   /* Styles for small screens */ 

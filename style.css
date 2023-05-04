@@ -1,4 +1,4 @@
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -222,10 +222,13 @@
 
 .recent_cont > main > ul {
   display: flex;
-  gap: 50px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-
+.recent_cont> main > ul>li:hover {
+    box-shadow: 0px 5px 25px rgba(0,0,0,0.3); 
+    transform: translateY(-10px); 
+} 
 .recent_cont > header {
   margin-bottom: 30px;
 }
@@ -234,7 +237,7 @@
   font-size: 1.8rem;
 }
 .recently-viewed-post {
-  width: 350px;
+  width: calc(25% - 4px);
   border-radius: 12px;
   box-shadow: 0 4px 7px #fff;
   overflow: hidden;

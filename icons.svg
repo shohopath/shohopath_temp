@@ -8,6 +8,7 @@
     trigger="morph"
     colors="primary:#da2573"
     state="morph"
+    style="width:250px;height:250px">
 </lord-icon>
 
 

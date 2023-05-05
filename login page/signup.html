@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>SignUp Now</h2>
+        <form action="">
+            <p>Password didnot match !!!</p>
+            <input type="text" name="username" id="username" class="input" placeholder="username">
+            <input type="email" name="email" id="email" class="input" placeholder="email">
+            <input type="text" name="schoolname" id="schoolname" class="input" placeholder="school/college name">
+            <select id="class" class="input" name="class">
+				<option value="">Select a class:</option>
+				<option value="1">Class 1</option>
+				<option value="2">Class 2</option>
+				<option value="3">Class 3</option>
+				<option value="4">Class 4</option>
+				<option value="5">Class 5</option>
+				<option value="6">Class 6</option>
+				<option value="7">Class 7</option>
+				<option value="8">Class 8</option>
+				<option value="9">Class 9</option>
+				<option value="10">Class 10</option>
+				<option value="11">Class 11</option>
+				<option value="12">Class 12</option>
+			</select>
+            <select id="group" class="input" name="group">
+				<option value="">Select a group:</option>
+				<option value="science">Science</option>
+				<option value="arts">Arts</option>
+				<option value="commerce">Commerce</option>
+			</select>
+            <select id="version" class="input" name="version">
+				<option value="">Select a version:</option>
+				<option value="science">Bangla</option>
+				<option value="arts">English</option>
+			</select>
+            <input type="password" name="pass" id="pass" class="input" placeholder="password">
+            <input type="password" name="confirm-pass" id="confirm-pass" class="input" placeholder=" confirm password">
+            <label for="photo" class="input">Upload a photo (optional):</label>
+            <input type="file" id="photo" name="photo" placeholder="your photo" accept="image/*">
+
+            <div class="btns">
+                <button type="submit">Register</button>
+                <a href="login.html"><button type="button" id="login">Login</button></a>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+
+    
+</body>
+</html>

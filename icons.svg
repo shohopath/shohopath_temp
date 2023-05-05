@@ -1,16 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 
-<!-- LOVE ICON -->
-<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/pnhskdva.json"
-    trigger="click"
-    colors="primary:#da2573"
-    state="morph"
-    style="width:250px;height:250px">
-</lord-icon>
-
 
 <!-- PAGES ICON -->
 <symbol id="icon__pages" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

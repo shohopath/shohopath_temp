@@ -238,64 +238,153 @@
   <!-- Recent Activity End -->
 
   <!-- New Uploads Start-->
-  <div class="container-fluid">
-    <div class="position-relative">
-      <h2 class="mt-4">New Uploads</h2>
-      <br>
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/500/300" class="card-img-top" alt="thumbnails">
-            <div class="card-body">
-              <h5 class="card-title">' . $title . '</h5>
-              <p class="card-text">' . $description . '</p>
+  <div class="container-fluid recent_cont">
+    <header>
+      <h2>New Uploads</h2>
+    </header>
+
+    <main>
+      <ul>
+        <li class="recently-viewed-post">
+          <header>
+            <p class="subject">Physics 1st Paper</p>
+          </header>
+            
+          <footer>
+            <div class="top">
+              <p>Chapter 2: Vector</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last seen on ' . $date_added . '</small>
+
+            <div class="bottom">
+              <div class="left">
+                <div class="left">
+                  <img src="profile_image.jpg" alt="">
+                </div>
+
+                <div class="right">
+                  <h4>Sakib UL Hasan</h2>
+                  <p>Adamjee Cantonment College</p>
+                </div>
+              </div>
+
+              <div class="right">
+                  <svg>
+                    <use href="icons.svg#icon__love"></use>
+                  </svg>
+
+                  <p>68</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/500/300" class="card-img-top" alt="thumbnails">
-            <div class="card-body">
-              <h5 class="card-title">' . $title . '</h5>
-              <p class="card-text">' . $description . '</p>
+          </footer>
+        </li>
+
+
+        <li class="recently-viewed-post">
+          <header>
+            <p class="subject">Physics 1st Paper</p>
+          </header>
+            
+          <footer>
+            <div class="top">
+              <p>Chapter 2: Vector</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last seen on ' . $date_added . '</small>
+
+            <div class="bottom">
+              <div class="left">
+                <div class="left">
+                  <img src="profile_image.jpg" alt="">
+                </div>
+
+                <div class="right">
+                  <h4>Sakib UL Hasan</h2>
+                  <p>Adamjee Cantonment College</p>
+                </div>
+              </div>
+
+              <div class="right">
+                  <svg>
+                    <use href="icons.svg#icon__love"></use>
+                  </svg>
+
+                  <p>68</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/500/300" class="card-img-top" alt="thumbnails">
-            <div class="card-body">
-              <h5 class="card-title">' . $title . '</h5>
-              <p class="card-text">' . $description . '</p>
+          </footer>
+        </li>
+
+
+        <li class="recently-viewed-post">
+          <header>
+            <p class="subject">Physics 1st Paper</p>
+          </header>
+            
+          <footer>
+            <div class="top">
+              <p>Chapter 2: Vector</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last seen on ' . $date_added . '</small>
+
+            <div class="bottom">
+              <div class="left">
+                <div class="left">
+                  <img src="profile_image.jpg" alt="">
+                </div>
+
+                <div class="right">
+                  <h4>Sakib UL Hasan</h2>
+                  <p>Adamjee Cantonment College</p>
+                </div>
+              </div>
+
+              <div class="right">
+                  <svg>
+                    <use href="icons.svg#icon__love"></use>
+                  </svg>
+
+                  <p>68</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/500/300" class="card-img-top" alt="thumbnails">
-            <div class="card-body">
-              <h5 class="card-title">' . $title . '</h5>
-              <p class="card-text">' . $description . '</p>
+          </footer>
+        </li>
+
+
+        <li class="recently-viewed-post">
+          <header>
+            <p class="subject">Physics 1st Paper</p>
+          </header>
+            
+          <footer>
+            <div class="top">
+              <p>Chapter 2: Vector</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last seen on ' . $date_added . '</small>
+
+            <div class="bottom">
+              <div class="left">
+                <div class="left">
+                  <img src="profile_image.jpg" alt="">
+                </div>
+
+                <div class="right">
+                  <h4>Sakib UL Hasan</h2>
+                  <p>Adamjee Cantonment College</p>
+                </div>
+              </div>
+
+              <div class="right">
+                  <svg>
+                    <use href="icons.svg#icon__love"></use>
+                  </svg>
+
+                  <p>68</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </footer>
+        </li>
+
+      </ul>
       <div class="d-flex justify-content-center mt-4">
-        <button class="btn btn-outline-success">Show more</button>
+        <button class="btn btn-outline-info">Show more</button>
       </div>
-    </div>
+    </main>
   </div>
   <!-- New Uploads End-->
 
@@ -304,20 +393,17 @@
   <!-- News & Updates Start-->
   <div class="container-fluid">
     <div class="position-relative">
-      <h2 class="mt-4">News & Updates</h2>
+      <h2 class="mt-4 ms-3">News & Updates</h2>
       <br>
-      <div class="card w-100 mb-3" id="card2">
+      <div class="card mb-3" id="card2">
         <div class="row g-0">
           <div class="col-md-4">
             <h2 class="card-title px-3 py-3">Headline</h2>
-            <p class="ms-3 me-1 fs-4">abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz
-              abcdrfghijklmnopqrstuvwxyz abcdrfghijklmnopqrstuvwxyz</p>
+            <p class="ms-3 me-1 fs-4">We're Gonna Publish This Site Soon</p>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <p class="card-text px-3 py-3">This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer. You can add more text here to increase the size
-                of the card as desired.</p>
+              <p class="card-text px-3 py-3">You guys would love to know that we're working hard  and soon we're gonna complete it and publish. So stay connected with us.</p>
             </div>
             <div class="card-footer2 d-flex justify-content-end">
               <small class="text-muted">Last updated on ' . $date_added . '</small>
@@ -331,12 +417,12 @@
 
   <br>
   <!-- Footer Start-->
-  <div class="container-fluid">
+  <div class="container-fluid" style="background-color: #c6def1;">
     <footer>
       <div class="container w-100 p-4">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4">
-            <h5 class="mb-3 text-dark">Footer content</h5>
+            <h5 class="mb-3 text-dark"><strong>Footer content</strong></h5>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur
               maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus
@@ -344,7 +430,7 @@
             </p>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3 text-dark">Links</h5>
+            <h5 class="mb-3 text-dark"><strong>Links</strong></h5>
             <ul class="list-unstyled mb-0">
               <li class="mb-1">
                 <a href="#!" style="color: #4f4f4f;">FAQ</a>
@@ -361,13 +447,13 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="text mb-4 ml-6 font-weight-bold" style="margin-left: 100px;">Follow us</h5>
+            <h5 class="text mb-4 ml-6 " style="margin-left: 100px;"><strong>Follow us</strong></h5>
             <!-- Social Media Icons -->
             <div class="d-flex justify-content-center ">
               <div class="social-icon">
                 <a class="" id="idfooter" style="margin-left:0px;" href="#"><svg xmlns="http://www.w3.org/2000/svg"
                     x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
-                    <g fill="#10562f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    <g fill="#0f5286" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
                       style="mix-blend-mode: normal">
@@ -380,7 +466,7 @@
                   </svg></a>
                 <a class="" id="idfooter" style="margin-left:15px;" href="#"> <svg xmlns="http://www.w3.org/2000/svg"
                     x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
-                    <g fill="#10562f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    <g fill="#0f5286" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
                       style="mix-blend-mode: normal">
@@ -393,7 +479,7 @@
                   </svg></a>
                 <a class="" id="idfooter" style="margin-left:15px;" href="#"><svg xmlns="http://www.w3.org/2000/svg"
                     x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
-                    <g fill="#10562f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    <g fill="#0f5286" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
                       style="mix-blend-mode: normal">
@@ -404,31 +490,17 @@
                       </g>
                     </g>
                   </svg></a>
-                <a class="" id="idfooter" style="margin-left:15px;" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
-                    <g fill="#10562f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                      style="mix-blend-mode: normal">
-                      <g transform="scale(5.12,5.12)">
-                        <path
-                          d="M16,3c-7.14545,0 -13,5.85455 -13,13v18c0,7.14545 5.85455,13 13,13h18c7.14545,0 13,-5.85455 13,-13v-18c0,-7.14545 -5.85455,-13 -13,-13zM16,5h18c6.05454,0 11,4.94545 11,11v18c0,6.05454 -4.94546,11 -11,11h-18c-6.05455,0 -11,-4.94546 -11,-11v-18c0,-6.05455 4.94545,-11 11,-11zM37,11c-1.1,0 -2,0.9 -2,2c0,1.1 0.9,2 2,2c1.1,0 2,-0.9 2,-2c0,-1.1 -0.9,-2 -2,-2zM25,14c-6.04545,0 -11,4.95454 -11,11c0,6.04546 4.95454,11 11,11c6.04546,0 11,-4.95454 11,-11c0,-6.04545 -4.95454,-11 -11,-11zM25,16c4.95454,0 9,4.04546 9,9c0,4.95454 -4.04546,9 -9,9c-4.95454,0 -9,-4.04546 -9,-9c0,-4.95454 4.04546,-9 9,-9z">
-                        </path>
-                      </g>
-                    </g>
+                <a class="" id="idfooter" style="margin-left:15px;" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="50" height="50"
+                  viewBox="0,0,256,256"
+                  style="fill:#000000;">
+                  <g fill="#0f5286" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
                   </svg></a>
-                <a class="" id="idfooter" style="margin-left:15px;" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
-                    <g fill="#10562f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                      style="mix-blend-mode: normal">
-                      <g transform="scale(5.12,5.12)">
-                        <path
-                          d="M24.40039,9c-6.35291,0 -12.5585,0.49125 -16.10156,1.2207l-0.02148,0.00391l-0.01953,0.00586c-2.28468,0.57117 -4.05738,2.15111 -4.43945,4.2832v0.00195c-0.41628,2.18606 -0.81836,5.82744 -0.81836,10.48438c0,4.94188 0.50092,8.39357 1.01953,10.58594c0.38082,2.12603 2.13692,3.82543 4.48437,4.29492h0.00195h0.00391c3.71677,0.72271 9.73647,1.21875 15.99023,1.21875c6.25376,0 12.37162,-0.49538 16.0918,-1.21875l0.02539,-0.00391l0.02539,-0.00586c2.28914,-0.57229 4.06404,-2.15846 4.44141,-4.29687l0.00195,-0.01172l0.00195,-0.00977c0.40147,-2.60952 0.91027,-6.1672 1.01172,-10.63086v-0.00977v-0.01172c0,-3.67203 -0.40792,-7.23036 -1.01562,-10.57422c-0.38398,-2.17587 -2.2424,-3.71737 -4.42969,-4.29297l-0.05273,-0.01367l-0.05664,-0.00976c-3.46991,-0.51013 -9.39478,-1.00977 -16.14453,-1.00977zM24.40039,11c6.61041,0 12.43297,0.49552 15.77344,0.98242c1.59405,0.43047 2.72696,1.47623 2.94141,2.69141v0.00195v0.00391c0.59085,3.24966 0.9832,6.68468 0.98438,10.20508c-0.0989,4.32442 -0.58845,7.75867 -0.98633,10.3457c-0.22344,1.25523 -1.2431,2.26164 -2.94141,2.69141c-3.48443,0.67388 -9.54224,1.17773 -15.67187,1.17773c-6.14537,0 -12.12398,-0.50449 -15.60742,-1.18164h-0.00195c-1.64406,-0.33129 -2.68276,-1.42495 -2.90625,-2.69141l-0.00391,-0.0293l-0.00781,-0.0293c-0.47846,-2.00953 -0.97266,-5.336 -0.97266,-10.16797c0,-4.54203 0.39958,-8.09926 0.7832,-10.11328v-0.00586l0.00195,-0.00781c0.222,-1.25794 1.24328,-2.26743 2.94531,-2.69727c3.26261,-0.66838 9.43645,-1.17578 15.66992,-1.17578zM19,16.9668v1.73242v14.33398l13.89844,-8.0332zM21,20.43359l7.90234,4.56641l-7.90234,4.56641z">
-                        </path>
-                      </g>
-                    </g>
+                <a class="" id="idfooter" style="margin-left:15px;" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="50" height="50"
+                  viewBox="0,0,256,256"
+                  style="fill:#000000;">
+                  <g fill="#0f5286" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z"></path></g></g>
                   </svg></a>
               </div>
             </div>
@@ -437,7 +509,7 @@
         </div>
       </div>
 
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-3" >
         © 2023 My Website. All rights reserved.
       </div>
     </footer>
@@ -447,7 +519,7 @@
   <!-- Back to Top -->
   <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-    <lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="loop" delay="100" colors="primary:#10562f"
+    <lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="loop" delay="100" colors="primary:#1070B7"
       style="width:50px;height:50px">
     </lord-icon>
   </a>

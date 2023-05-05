@@ -18,6 +18,10 @@
   width: 25px;
   height: 25px;
  }
+
+ ul {
+  margin-bottom: 0;
+ }
  
  :root{
   --sky-blue: #2DAAE1;
@@ -181,6 +185,9 @@
     font-size: 1.2rem;
   }
 
+  .home-image-cont .left .left-main-cont main ul {
+  }
+
   .home-image-cont .left .left-main-cont main::before {
     content: '';
     height: 100%;
@@ -258,6 +265,11 @@
   padding: 40px 30px;
 }
 
+.home_small-cont main {
+  display: flex;
+  align-items: center;
+}
+
 .home_small-cont > main > ul {
   display: flex;
   gap: 25px;
@@ -271,6 +283,40 @@
 .home_small-cont > header h2 {
   font-size: 1.8rem;
 }
+
+.home_small-cont > main .show-more {
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+  margin-left: 30px;
+  /* border: 1px solid var(--deep-blue); */
+  box-shadow: 0px 2px 10px rgb(255, 255, 255); 
+  background: var(--deep-blue);
+  /* background: var(--pink); */
+  /* background: var(--light-sky-blue);
+  background: #fff; */
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.home_small-cont > main .show-more:hover {
+  /* box-shadow: 0px 2px 10px rgb(211 219 224);  */
+  transform: translateX(5px); 
+}
+
+
+.home_small-cont > main .show-more svg {
+  width: 35px;
+  height: 35px;
+  /* fill: var(--deep-blue);
+  fill: black;
+  fill: var(--deep-blue-2); */
+  fill: #fff;
+}
+
+
+
+
 
 .upload {
   /* width: calc(25% - 4px); */
@@ -313,7 +359,7 @@
   color: #fff;
   text-transform: uppercase;
   cursor: default;
-  z-index: 3;
+  z-index: 1;
   position: absolute;
   top: 0;
 }
@@ -382,6 +428,7 @@
 
 .home_small-cont > footer {
   margin-top: 40px;
+  display: flex;
 }
 
 .home_small-cont > footer ul {
@@ -393,6 +440,83 @@
 .home_small-cont > footer ul li a {
   text-decoration: none;
 }
+
+
+
+
+.news_cont header {
+  /* background: var(--sky-blue); */
+}
+
+.footer_cont main {
+  height: 600px;
+  background: var(--deep-blue-2);
+}
+
+.footer_cont > header svg {
+  transform: scale(-1,1);
+  width: 100vw;
+  height: calc(100vw / 12);
+  fill: var(--deep-blue-2);
+}
+
+.footer_cont main {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.footer_cont main .left {
+  width: 50%;
+}
+
+.footer_cont main .left h2 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.footer_cont > main .left p {
+  color: var(--container-white);
+  opacity: 80%;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.footer_cont main .middle {
+  width: 20%;
+}
+
+.footer_cont main .right {
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   /* styles for mobile screens */

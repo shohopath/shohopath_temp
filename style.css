@@ -234,12 +234,11 @@
 
 
 /* RECENT POST */
-<<<<<<< HEAD
 .recent_cont {
     padding: 40px 30px;
   }
   
-  .recent_cont > main > ul {
+  /* .recent_cont > main > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -253,7 +252,8 @@
   .recent_cont> main > ul>li:hover {
       box-shadow: 0px 5px 25px rgba(0,0,0,0.3); 
       transform: translateY(-10px); 
-=======
+  } */
+
 .home_small-cont {
   padding: 40px 30px;
 }
@@ -394,103 +394,6 @@
   text-decoration: none;
 }
 
-
-
-   
-  /* Header Styles */ 
-  /* header { 
-    background-color: #347a32; 
-    padding: 10px; 
-    text-align: center; 
->>>>>>> 0dfee40 (Changes on conts on homepage)
-  } 
-  .recent_cont > header {
-    margin-bottom: 30px;
-  }
-  
-  .recent_cont > header h2 {
-    font-size: 1.8rem;
-  }
-  .recently-viewed-post {
-    width: calc(25% - 4px);
-    border-radius: 12px;
-    box-shadow: 0 4px 7px #fff;
-    overflow: hidden;
-  }
-  
-  .recently-viewed-post header {
-    height: 300px;
-    background: url(note_cover.jpg);
-    background-size: cover;
-    cursor: pointer;
-  } 
-  
-  .recently-viewed-post header .subject {
-    border-radius: 8px;
-    padding: 4px 12px;
-    height: min-content;
-    display: inline-block;
-    background: var(--deep-blue);
-    color: #fff;
-    text-transform: uppercase;
-    cursor: default;
-  }
-  
-  
-  .recently-viewed-post footer {
-    background: var(--light-sky-blue);
-  }
-  .recently-viewed-post footer > .top {
-    padding: 8px 12px;
-    font-size: 1.2rem;
-    background: white;
-  }
-  
-  .recently-viewed-post footer > .bottom {
-    display: flex;
-    padding: 15px;
-    align-items: center;
-  }
-  
-  .recently-viewed-post footer > .bottom > .left {
-    display: flex;
-    width: 80%;
-  }
-  
-  .recently-viewed-post footer > .bottom .left img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .recently-viewed-post footer > .bottom > .left > .right {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .recently-viewed-post footer > .bottom > .left > .right h4 {
-    font-size: 1.1rem;
-  }
-  
-  .recently-viewed-post footer > .bottom > .left > .right p {
-    font-size: 0.7rem;
-  }
-  
-  
-  .recently-viewed-post footer > .bottom > .right  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color: var(--pink);
-  }
-  
-  .recently-viewed-post footer > .bottom > .right svg {
-    width: 25px;
-    height: 25px;
-    fill: var(--pink);
-  }
   
   /* styles for mobile screens */
   @media screen and (max-width: 767px) {

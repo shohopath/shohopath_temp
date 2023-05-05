@@ -5,7 +5,7 @@
 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 <lord-icon
     src="https://cdn.lordicon.com/pnhskdva.json"
-    trigger="morph"
+    trigger="click"
     colors="primary:#da2573"
     state="morph"
     style="width:250px;height:250px">

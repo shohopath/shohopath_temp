@@ -113,9 +113,17 @@
   .nav-item.active a {
     color: #fff !important;
     transition: .2s ease-in-out;
+    height: fit-content;
   }
-  .nav-item-profile:hover{
-    background:transparent;
+  .nav-item-profile {
+    margin: 0 15px;
+  }
+  
+  .nav-item-profile img {
+    height: 7vh;
+    width: 7vh;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .nav-item a {
@@ -123,10 +131,8 @@
   }
 
   .profile a img {
-    height: 7vh;
-    width: 7vh;
     
-    object-fit: cover;
+    
   }
 
 
@@ -199,8 +205,7 @@
     font-size: 1.2rem;
   }
 
-  .home-image-cont .left .left-main-cont main ul {
-  }
+  
 
   .home-image-cont .left .left-main-cont main::before {
     content: '';
@@ -216,6 +221,7 @@
   
   .home-image-cont .left .left-main-cont footer .upload_btn {
     margin-top: 40px;
+    margin-bottom: 10px;;
     border-radius: 8px;
     background: var(--deep-blue);
     border: none;
@@ -629,9 +635,6 @@
   margin-bottom: 15px;
 }
 
-.footer_cont main .right .top {
-
-}
 
 .footer_cont main .right .middle {
   margin-bottom: 35px;
@@ -671,9 +674,7 @@
   border-radius: 50%;
 }
 
-.footer_cont main .right .bottom {
 
-}
 
 .footer_cont main .right .bottom h5 {
   font-size: 1.5rem;

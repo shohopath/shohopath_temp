@@ -70,6 +70,12 @@
   #topbar a .phone-icon { 
     margin-top: -1px; 
   } 
+
+  nav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+  }
    
   .navbar{ 
     background-color: #EFF3FF; 
@@ -77,7 +83,7 @@
     min-height: 90px;
     position: fixed;
     width: 100vw;
-    z-index: 2;
+    padding: 0 10px;
   } 
 
   .navbar-brand {
@@ -144,6 +150,86 @@
     align-items: center; 
    
   } 
+
+
+  .search_bar {
+    /* margin-right: 10px; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .search-input {
+    background: none;
+    border: none;
+    /* border: 1px solid black; */
+    border-radius: 12px;
+    width: 20vw;
+    padding: 16px;
+    background: var(--container-white);
+    width: 0;
+    opacity: 0;
+    /* background: none; */
+  }
+
+  .search_bar svg {
+    fill: black;
+    position: relative;
+    right: 45px;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  .search_bar:hover .search-input,
+  .search-bar:focus .search-input,
+  .search-input:focus,
+  .search-input:hover {
+    width: 20vw;
+    opacity: 100%;
+    background: var(--container-white);
+    transition: .3s ease;
+  }
+
+  .search_bar:hover svg ,
+  .search-bar:focus svg ,
+  .search-input:focus ~ svg,
+  .search-input:hover ~ svg {
+    fill: var(--deep-blue) !important ;
+    transition: .3s ease;
+  }
+
+
+
+
+
+  .bottom-nav {
+    z-index: 2;
+    position: absolute;
+    /* bottom: 100%; */
+    right: 0;
+    top: max(90px, 9.5vh);
+    background: var(--light-sky-blue);
+    padding: 8px 16px;
+    border-radius: 0 0 0 12px;
+  }
+
+  .bottom-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-direction: row-reverse;
+  }
+
+  .bottom-nav ul li {
+    cursor: pointer;
+  }
+
+  .bottom-nav ul li:hover svg {
+    fill: var(--deep-blue-2);
+    transition: .3s ease;
+  }
 
 
   .home-image-cont {
@@ -371,7 +457,7 @@
   cursor: pointer;
 }  */
 
-.upload header {
+.upload > header {
   cursor: pointer;
 }
 
@@ -394,6 +480,10 @@
   z-index: 1;
   position: absolute;
   top: 0;
+}
+
+.upload header .upload-type-class {
+  background: var(--deep-blue) !important;
 }
 
 .upload header .upload-type {
@@ -449,6 +539,10 @@
   font-size: 1.1rem;
 }
 
+.upload footer > .bottom > .left > .right h4:hover {
+  text-decoration: underline;
+}
+
 .upload footer > .bottom > .left > .right p {
   font-size: 0.7rem;
 }
@@ -466,6 +560,11 @@
   width: 25px;
   height: 25px;
   fill: var(--pink);
+  cursor: pointer;
+}
+
+.upload footer > .bottom > .right p {
+  cursor: default;
 }
 
 

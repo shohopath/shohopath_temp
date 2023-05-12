@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
 
   <link rel="stylesheet" href="style.css">
 
@@ -20,8 +21,8 @@
 
 <body>
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
+  <nav class="navbar-expand-lg navbar-light ">
+    <div class="top-nav navbar">
       <a class="navbar-brand" href="#"><img src="img/সহপাঠ_logo_main_cropped_5.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,21 +31,39 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ml-auto">
+          <li class="search_bar">   
+
+            <input class="search-input" type="text" placeholder="Search for a subject or a chapter">
+            <svg class="search-icon" onclick="focusInput()">
+              <use href="icons.svg#icon__search"></use>
+            </svg>
+           
+            <script>
+              console.log('a')
+              const focusInput = () => {
+                document.querySelector('.search-input').focus()
+                document.querySelector('.search-icon').focus()
+              }
+            </script>
+          
+          </li>
+
           <li class="nav-item active">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Feed</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link active" href="#">Subjects</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link active" href="#">Saved</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Wishlist</a>
-          </li>
+          
           <li class="nav-item-profile">
             <a class="nav-link active" href="#"><img class="img-fluid rounded-circle"
                 src="img/profile_image.jpg" alt="Profile"></a>
@@ -52,13 +71,34 @@
         </ul>
       </div>
     </div>
+
+
+    <div class="bottom-nav">
+      <ul>
+        <!-- <li>
+          <p>English</p>
+        </li> -->
+
+        <li>
+          <svg>
+            <use href="icons.svg#icon__heart"></use>
+          </svg>
+        </li>
+
+        <li>
+          <svg>
+            <use href="icons.svg#icon__notification"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
   </nav>
 
 
   <!-- Navbar End -->
 
   <!-- Upload Section Start -->
-  <div class="container-fluid home-image-cont">
+  <div class="home-image-cont">
     <div class="left">
       <div class="left-main-cont">
         <header>
@@ -121,9 +161,10 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
+                  <svg>
+                    <use href="icons.svg#icon__heart"></use>
+                  </svg>     
+
                   <p>68</p>
               </div>
             </div>
@@ -157,10 +198,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -193,10 +235,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -206,7 +249,7 @@
         <li class="recently-viewed-post upload">
           <header>
             <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Class</p>
+            <p class="upload-type upload-type-class">Class</p>
             <img src="img/class_cover_1.jpg" alt="">
           </header>
             
@@ -229,10 +272,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -295,10 +339,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -331,10 +376,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -367,10 +413,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -380,7 +427,7 @@
         <li class="recently-viewed-post upload">
           <header>
             <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Class</p>
+            <p class="upload-type upload-type-class">Class</p>
             <img src="img/class_cover_1.jpg" alt="">
           </header>
             
@@ -403,10 +450,11 @@
               </div>
 
               <div class="right">
-                  <!-- LOVE ICON -->
-                  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="click" colors="primary:#da2573" state="morph" style="width:50px;height:50px"> </lord-icon>
-                  <p>68</p>
+                <svg>
+                  <use href="icons.svg#icon__heart"></use>
+                </svg>     
+
+                <p>68</p>
               </div>
             </div>
           </footer>
@@ -481,7 +529,9 @@
             <a href="">Wishlist</a>
           </li>
 
-          
+          <li>
+            <a href="">Profile</a>
+          </li>
 
         </ul>
       </div>
@@ -537,13 +587,13 @@
 
             <li>
               <svg>
-                <use href="icons.svg#icon__facebook"></use>
+                <use href="icons.svg#icon__twitter"></use>
               </svg>
             </li>
 
             <li>
               <svg>
-                <use href="icons.svg#icon__facebook"></use>
+                <use href="icons.svg#icon__linked-in"></use>
               </svg>
             </li>
           </ul>

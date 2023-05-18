@@ -3,44 +3,8 @@
 
 
 <!-- PAGES ICON -->
-<symbol id="icon__pages" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <g>
-  <path d="m170.8 515.2h291.2c3.3594 0 5.6016-2.2383 5.6016-5.6016v-39.199h50.398c3.3594 0 5.6016-2.2383 5.6016-5.6016v-314.72c0-1.6797-0.55859-2.8008-1.6797-3.9219l-101.36-99.676c-1.1172-1.1211-2.2383-1.6797-3.918-1.6797h-201.04c-3.3594 0-5.6016 2.2383-5.6016 5.6016v50.398h-39.199c-3.3594 0-5.6016 2.2383-5.6016 5.6016v403.2c0 3.3594 2.2422 5.5977 5.6016 5.5977zm252-450.8 82.32 81.203h-82.32zm-201.6-8.3984h190.4v95.199c0 3.3594 2.2383 5.6016 5.6016 5.6016h95.199v302.4h-291.2zm-44.801 56h33.602v352.8c0 3.3594 2.2383 5.6016 5.6016 5.6016h240.8v33.602l-280-0.003906z"/>
-  <use x="70" y="644" xlink:href="#t"/>
-  <use x="90.550781" y="644" xlink:href="#c"/>
-  <use x="104.359375" y="644" xlink:href="#a"/>
-  <use x="123.347656" y="644" xlink:href="#j"/>
-  <use x="142.242188" y="644" xlink:href="#b"/>
-  <use x="155.628906" y="644" xlink:href="#a"/>
-  <use x="174.617188" y="644" xlink:href="#e"/>
-  <use x="204.410156" y="644" xlink:href="#i"/>
-  <use x="224.453125" y="644" xlink:href="#h"/>
-  <use x="252.453125" y="644" xlink:href="#g"/>
-  <use x="271.550781" y="644" xlink:href="#c"/>
-  <use x="285.359375" y="644" xlink:href="#s"/>
-  <use x="294.957031" y="644" xlink:href="#e"/>
-  <use x="315" y="644" xlink:href="#a"/>
-  <use x="333.992188" y="644" xlink:href="#f"/>
-  <use x="353.921875" y="644" xlink:href="#b"/>
-  <use x="70" y="672" xlink:href="#r"/>
-  <use x="82.183594" y="672" xlink:href="#c"/>
-  <use x="95.992188" y="672" xlink:href="#d"/>
-  <use x="115.226562" y="672" xlink:href="#q"/>
-  <use x="154.152344" y="672" xlink:href="#b"/>
-  <use x="167.535156" y="672" xlink:href="#p"/>
-  <use x="187.46875" y="672" xlink:href="#a"/>
-  <use x="216.207031" y="672" xlink:href="#o"/>
-  <use x="239.640625" y="672" xlink:href="#d"/>
-  <use x="258.878906" y="672" xlink:href="#n"/>
-  <use x="278.8125" y="672" xlink:href="#f"/>
-  <use x="308.492188" y="672" xlink:href="#m"/>
-  <use x="329.015625" y="672" xlink:href="#c"/>
-  <use x="342.820312" y="672" xlink:href="#d"/>
-  <use x="362.058594" y="672" xlink:href="#l"/>
-  <use x="371.65625" y="672" xlink:href="#a"/>
-  <use x="390.648438" y="672" xlink:href="#k"/>
-  <use x="407.242188" y="672" xlink:href="#b"/>
- </g>
+<symbol id="icon__pages" xmlns="http://www.w3.org/2000/svg" class="bi bi-file-earmark" viewBox="0 0 16 16">
+  <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
 </symbol>
 
 
@@ -105,6 +69,12 @@
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 </symbol>
 
+
+<!-- CLASS ICON -->
+<symbol id="icon__class" xmlns="http://www.w3.org/2000/svg" class="bi bi-file-play" viewBox="0 0 16 16">
+  <path d="M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z"/>
+  <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+</symbol>
 
 </defs>
 </svg>

@@ -483,12 +483,12 @@
     text-align: left;
   }
 
-  .home-image-cont .left .left-main-cont header {
+  .welcome-text {
     background: none;
     text-align: left;
   }
 
-  .home-image-cont .left .left-main-cont header h2 {
+  .welcome-text h2 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-left: 5px;
@@ -496,7 +496,7 @@
   }
 
 
-  .home-image-cont .left .left-main-cont header h1 {
+  .welcome-text h1 {
     font-size: 6rem;
     color: var(--deep-blue-2);
   }

@@ -1,0 +1,21 @@
+* {
+    outline: none !important;
+}
+
+.back_btn {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.back_btn button {
+    background: none;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.reg__cont {
+    height: 90.5vh;
+    top: 9.5vh;
+}

@@ -1,3 +1,90 @@
+.subject__cont {
+    top: 9.5vh;
+}
+
+.subject__cont > header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.subject__cont > header .top {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.subject__cont > header .top > div {
+    padding: 20px;
+    background: var(--light-sky-blue);
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 12px;
+    width: 15%;
+    font-size: 1.2rem;
+}
+
+.subject__cont > header .top > div > div {
+    margin-top: 10px;
+}
+
+.subject__cont > header > div div p {
+    display: inline-block;
+}
+
+.subject__cont header .top > div div p:nth-child(2) {
+    float: right;
+}
+
+.subject__cont header .bottom {
+    width: 30%;
+    background: #fff;
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+.subject__cont > main {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject__cont > main header h2 {
+    background: var(--deep-blue);
+    color: var(--container-white);
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: fit-content;
+    /* text-transform: uppercase; */
+}
+
+.subject__cont > main main {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.subjects ul {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
 .info_bar {
     bottom: 5px;
     right: 0;
@@ -31,9 +118,12 @@
     top: 2px;
 }
 
+.subject footer .top {
+    padding: 15px;
+}
 
 .subject footer > .bottom {
-    padding: 20px;
+    padding: 15px;
 }
 
 .subject footer .bottom .left {
@@ -47,4 +137,9 @@
 .progress_cont p:nth-child(1) {
     color: black;
     margin-right: 10px;
+}
+
+
+.subject__cont > footer {
+    padding: 40px;
 }

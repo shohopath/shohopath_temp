@@ -6,7 +6,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap: 30px; */
     justify-content: center;
 }
 
@@ -20,7 +20,7 @@
     padding: 20px;
     background: var(--light-sky-blue);
     background-color: #fff;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border-radius: 12px;
     width: 15%;
     font-size: 1.2rem;
@@ -45,6 +45,7 @@
     align-self: center;
     padding: 15px;
     border-radius: 12px;
+    margin-top: 20px;
 }
 
 
@@ -61,13 +62,14 @@
     align-items: center;
 }
 
-.subject__cont > main header h2 {
+.header-text {
     background: var(--deep-blue);
-    color: var(--container-white);
+    color: #fff;
     padding: 10px 20px;
     border-radius: 12px;
     width: fit-content;
     /* text-transform: uppercase; */
+    margin: 40px auto;
 }
 
 .subject__cont > main main {

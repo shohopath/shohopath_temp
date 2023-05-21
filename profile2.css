@@ -1,0 +1,149 @@
+/* Profile page */
+main {
+  padding-top: 80px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #dee3e5;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-header {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #c5d7eb;
+}
+
+.profile-header p {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+  color: #555;
+}
+
+.profile-info h2,
+.profile-info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.Settings {
+  margin-top: 30px;
+}
+
+.button-toggle {
+  cursor: pointer;
+}
+
+/* Uploads styles */
+.uploads-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.your-uploads {
+  width: 32%;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  margin-bottom: 20px;
+}
+
+.your-uploads:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.upload-type {
+  border-radius: 8px;
+  padding: 4px 12px;
+  display: inline-block;
+  background: #f06292;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: default;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.your-uploads img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.your-uploads footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+}
+
+.left {
+  flex-basis: 80%;
+}
+
+.left h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.left p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.right {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.right p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .uploads-list {
+    flex-direction: column;
+  }
+
+  .your-uploads {
+    width: 100%;
+    margin-right: 0;
+  }
+}

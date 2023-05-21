@@ -1,0 +1,50 @@
+.info_bar {
+    bottom: 5px;
+    right: 0;
+    width: 80px;
+}
+
+.info_bar div {
+    margin-right: 7.5px;
+}
+
+
+.info_bar div:nth-child(2) svg {
+    width: 15px !important;
+    height: 15px !important;
+    top: 1px !important;
+}
+
+
+.info__icon {
+    width: 14px !important;
+    height: 14px !important;
+    margin-right: 2px !important;
+    fill: var(--light-black) !important;
+}
+
+.info_bar div p {
+    font-size: 0.75rem;
+    color: grey !important;
+    display: block;
+    height: min-content;
+    top: 2px;
+}
+
+
+.subject footer > .bottom {
+    padding: 20px;
+}
+
+.subject footer .bottom .left {
+    /* width: 85% !important; */
+}
+
+.progress_cont p {
+    font-size: 0.85rem;
+}
+
+.progress_cont p:nth-child(1) {
+    color: black;
+    margin-right: 10px;
+}

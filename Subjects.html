@@ -16,6 +16,7 @@
   
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="subjects.css">
 
 </head>
 
@@ -59,7 +60,7 @@
                     </div>
 
                     <div class="bottom">
-                      <div class="left progress_cont">
+                      <div class="left">
                         <div class="progress-bar">
                           <div class="bar"></div>
                         </div>
@@ -67,7 +68,7 @@
                       </div>
                     </div>
 
-                    <div class="more-bottom info_bar">
+                    <div class="more-bottom">
                       <div class="total_notes">
                         <svg>
                           <use href="icons.svg#icon__pages"></use>
@@ -282,7 +283,7 @@
             </div>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
 
@@ -290,7 +291,7 @@
             <a class="nav-link active" aria-current="page" href="#">Feed</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link active" href="#">Subjects</a>
           </li>
 
@@ -459,541 +460,111 @@
     </div>
   </nav>
 
+  <div class="subject__cont">
+    <header>
+        <div class="left">
+            <table>
+                <tr>
+                    <td>Total Subjects</td> <td>12</td>
+                </tr>
 
-  <!-- Navbar End -->
+                <tr>
+                    <td>Total notes</td> <td>120</td>
+                </tr>
 
-  <!-- Upload Section Start -->
-  <div class="home-image-cont">
-    <div class="left">
-      <div class="left-main-cont">
-        <header class="welcome-text">
-          <h2>Welcome to</p>
-          <h1>Shohopath!</h1>
+                <tr>
+                    <td>Total classes</td> <td>42</td>
+                </tr>
+
+                <tr>
+                    <td>Your uploads</td> <td>5</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="right">
+            <table>
+                <tr>
+                    <td>Total Subjects</td> <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>Total notes</td> <td>120</td>
+                </tr>
+
+                <tr>
+                    <td>Total classes</td> <td>42</td>
+                </tr>
+
+                <tr>
+                    <td>Your uploads</td> <td>5</td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <h2>Subjects</h2>
         </header>
 
         <main>
-          <p>The ultimate online platform for learners. Explore our vast collection of study materials, upload your own
-            resources, and join a growing community of knowledge seekers. Let's learn smarter, not harder - together!
-          </p>
+            <ul>
+                <li class="subject upload">
+                    <header>
+                      <img src="img/note_cover_2.jpg" alt="">
+                    </header>
+                      
+                    <footer>
+                      <div class="top">
+                        <h4>Physics 1st Paper</h4>
+                        <p>Chapters: 10</p>
+
+                        <div class="right info_bar">
+                            <div class="total_notes">
+                                <svg class="info__icon">
+                                  <use href="icons.svg#icon__pages"></use>
+                                </svg>
+        
+                                <p>32</p>
+                              </div>
+        
+                              <div class="total_classes">
+                                <svg class="info__icon">
+                                  <use href="icons.svg#icon__class"></use>
+                                </svg>
+        
+                                <p>22</p>
+                              </div>
+                        </div>
+                      </div>
+          
+                      <div class="bottom">
+                        <div class="left progress_cont">
+                            <p>Completed:</p>
+                            <div class="progress-bar">
+                                <div class="bar"></div>
+                            </div>
+                            <p>82%</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </li>
+            </ul>
         </main>
-
-        <footer>
-          <button type="submit" class="btn upload_btn">Upload a post</button>
-        </footer>
-      </div>
-    </div>
-
-    <div class="right">
-      <img src="img/home_image.png" class="img-fluid" alt="your image" />
-    </div>
-  </div>
-
-
-  <!-- Upload Section End -->
-
-
-  <!-- Recent Activity Start -->
-  <div class="container-fluid recent_cont home_small-cont">
-    <header>
-      <h2>You recently viewed...</h2>
-    </header>
-
-    <main>
-      <ul>
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Notes</p>
-            <img src="img/note_cover_1.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                  <svg>
-                    <use href="icons.svg#icon__heart"></use>
-                  </svg>     
-
-                  <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Notes</p>
-            <img src="img/note_cover_2.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Notes</p>
-            <img src="img/note_cover_2.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type upload-type-class">Class</p>
-            <img src="img/class_cover_1.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-      </ul>
-    </main>
-
-    <footer>
-      <ul>
-        <li>
-          <a href="">Bangla 1st paper</a>
-        </li>
-
-        <li>
-          <a href="">Higher Math 1st paper</a>
-        </li>
-
-        <li>
-          <a href="">Chemistry 2nd paper</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
-
-  <!-- Recent Activity End -->
-
-  <!-- New Uploads Start-->
-  <div class="container-fluid home_small-cont">
-    <header>
-      <h2>Recent Uploads</h2>
-    </header>
-    
-
-    <main>
-      <ul>
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Notes</p>
-            <img src="img/note_cover_1.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Notes</p>
-            <img src="img/note_cover_2.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type">Notes</p>
-            <img src="img/note_cover_2.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-
-
-        <li class="recently-viewed-post upload">
-          <header>
-            <!-- <p class="subject">Physics 1st Paper</p> -->
-            <p class="upload-type upload-type-class">Class</p>
-            <img src="img/class_cover_1.jpg" alt="">
-          </header>
-            
-          <footer>
-            <div class="top">
-              <h4>Physics 1st Paper</h4>
-              <p>Chapter 2: Vector</p>
-            </div>
-
-            <div class="bottom">
-              <div class="left">
-                <div class="left">
-                  <img src="img/profile_image.jpg" alt="">
-                </div>
-
-                <div class="right">
-                  <h4>Sakib UL Hasan</h2>
-                  <p>Adamjee Cantonment College</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <svg>
-                  <use href="icons.svg#icon__heart"></use>
-                </svg>     
-
-                <p>68</p>
-              </div>
-            </div>
-          </footer>
-        </li>
-      </ul>
-
-      <div class="show-more">
-        <svg>
-          <use href="icons.svg#icon__arrow-right"></use>
-        </svg>
-      </div>
     </main>
   </div>
-  <!-- New Uploads End-->
 
 
 
-  <div class="home_small-cont news_cont">
-    <div class="left">
-      <img src="img/books.png" alt="">
-    </div>
-
-    <div class="right">
-      <h2>Lorem Ipsum!</h2>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque soluta facilis itaque ab impedit aliquam quod quam odio vero accusamus. Aliquam sed a at architecto est non placeat libero quis.
-      <br> <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officiis excepturi. Impedit, culpa ullam repellendus perferendis explicabo incidunt temporibus sint asperiores nostrum! Maxime blanditiis laudantium recusandae deserunt aliquid? Earum, quis!
-      </p>
-    </div>
-  </div>
 
 
-  <!-- News & Updates Start-->
-  <div class="footer_cont">
-    <header>
-      <svg>
-        <use href="icons.svg#icon__wave-up"></use>
-      </svg>
-    </header>
 
-    <main>
-      <div class="left">
-        <h2>Hello, there!</h2>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur
-          maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus
-          sint! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur
-          maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus
-          sint!
-        </p>
-      </div>
 
-      <div class="middle">
-        <h4>Quick links</h4>
 
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
 
-          <li>
-            <a href="">Feed</a>
-          </li>
 
-          <li>
-            <a href="">Saved</a>
-          </li>
-
-          <li>
-            <a href="">Wishlist</a>
-          </li>
-
-          <li>
-            <a href="">Profile</a>
-          </li>
-
-        </ul>
-      </div>
-
-      <div class="right">
-        <h4>Contact Us</h2>
-
-        <div class="top">
-          <p>Mail: shohopath.developer@gmail.com</p>
-        </div>
-
-        <div class="middle">
-          <h5>Meet the developers</h5>
-
-          <ul>
-            <li>
-              <img src="img/profile_image.jpg" alt="">
-              <p>Sakib</p>
-            </li>
-            
-            <li>
-              <img src="img/profile_image.jpg" alt="">
-              <p>Sakib</p>
-            </li>
-            
-            <li>
-              <img src="img/profile_image.jpg" alt="">
-              <p>Sakib</p>
-            </li>
-
-            <li>
-              <img src="img/profile_image.jpg" alt="">
-              <p>Sakib</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bottom">
-          <h5>Stay in touch with us</h5>
-
-          <ul>
-            <li>
-              <svg>
-                <use href="icons.svg#icon__facebook"></use>
-              </svg>
-            </li>
-
-            <li>
-              <svg>
-                <use href="icons.svg#icon__instagram"></use>
-              </svg>
-            </li>
-
-            <li>
-              <svg>
-                <use href="icons.svg#icon__twitter"></use>
-              </svg>
-            </li>
-
-            <li>
-              <svg>
-                <use href="icons.svg#icon__linked-in"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  </div>
-  <!-- News & Updates End-->
-
-  <!-- Footer End-->
-  <!-- Back to Top -->
-  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-    <script src="img/https://cdn.lordicon.com/bhenfmcm.js"></script>
-    <lord-icon src="img/https://cdn.lordicon.com/xsdtfyne.json" trigger="loop" delay="100" colors="primary:#1070B7"
-      style="width:50px;height:50px">
-    </lord-icon>
-  </a>
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-          $('#back-to-top').fadeIn();
-        } else {
-          $('#back-to-top').fadeOut();
-        }
-      });
-      // scroll body to 0px on click 
-      $('#back-to-top').click(function () {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 400);
-        return false;
-      });
-    }); 
-  </script>
 
   <!-- jQuery library -->
   <script src="img/https://code.jquery.com/jquery-3.6.0.min.js"></script>

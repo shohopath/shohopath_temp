@@ -1,4 +1,5 @@
 /* Profile page */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Quicksand&display=swap');
 main {
   padding-top: 80px;
 }
@@ -15,11 +16,10 @@ main {
 }
 
 .profile {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,18 +27,59 @@ main {
 .profile-header {
   display: inline-flexbox;
   margin-top: 10px;
-  padding-top: 20px;
   background: linear-gradient(120deg, #c5d7eb 0%, #96a6b9 100%);
   border-radius: 12px;
   text-align: center;
+  margin: 70px auto 30px auto;
+  width: 90%;
+  background: var(--light-sky-blue);
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 7px var(--container-white);
+}
+
+.profile-header div:nth-child(2),
+.profile-header div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .profile-header p {
   font-size: 32px;
   margin: 0;
   color: #333;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  float: left;
 }
+
+.Name {
+  font-size: 2.5rem !important;
+  text-transform: uppercase;
+}
+
+.College {
+  font-size: 1.2rem !important;
+  color: var(--deep-blue) !important;
+}
+
+.class-label p {
+  background: var(--light-sky-blue);
+  padding: 10px 20px;
+  font-size: 1.5rem !important;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 12px;
+  color: var(--deep-blue-2);
+}
+
+
+
+
+
+
+
+
 
 .profile-info h2,
 .profile-info h3 {
@@ -46,6 +87,21 @@ main {
   font-size: 20px;
   color: #333;
 }
+
+
+
+.profile__bottom {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
 
 .Settings {
   margin-top: 30px;

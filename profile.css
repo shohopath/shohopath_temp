@@ -4,15 +4,22 @@ main {
   padding-top: 80px;
 }
 
-/* Sidebar styles */
-.sidebar {
+/* info bar styles */
+.profile-info,
+.upload-info,
+.point-info {
   height: 100%;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #dee3e5;
+  -webkit-text-fill-color: var(--deep-blue);
+  background-color: var(--light-sky-blue);
+}
+.point-info{
+  align-items: center;
+  font-size: 200%;
 }
 
 .profile {

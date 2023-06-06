@@ -658,6 +658,15 @@ nav a {
     .home-image-cont .left .left-main-cont footer .upload_btn {
       margin-bottom: 20px;
     }
+    .search_mobile {
+    z-index: 2;
+    position: absolute;
+    /* bottom: 100%; */
+    top: max(90px, 9.5vh);
+    background: var(--light-sky-blue);
+    padding: 8px 16px;
+    border-radius: 0 0 0 12px;
+  }
     .search_bar_mobile {
       visibility: visible;
       right: 265px;

@@ -327,6 +327,10 @@ nav a {
   border-radius: 0 0 0 12px;
 }
 
+.bottom-nav > li {
+  list-style: none;
+}
+
 .bottom-nav > ul {
   display: flex;
   gap: 20px;
@@ -531,7 +535,7 @@ nav a {
   }
   
   .home-image-cont .left .left-main-cont {
-    width: 100%;
+    
     text-align: left;
   }
   
@@ -602,14 +606,19 @@ nav a {
   .home-image-cont .right img {
     height: 95%;
   }
-  
+  .search_bar_mobile {
+    visibility: hidden; 
+    right: 265px;
+  } 
+
   @media screen and (max-width: 600px ) {
-    .bottom-nav{
-      right: 310px;
-    }
     .home-image-cont{
       padding-top: 150px;
     }
+    .home-image-cont .left .left-main-cont {
+      width: 100%;
+    }
+
     .home-image-cont .left .left-main-cont header h2{
         font-size: 1.6rem;
         text-transform: uppercase;
@@ -634,6 +643,14 @@ nav a {
     .home-image-cont .left .left-main-cont main {
       padding-left: 20px;
       font-size: .7rem
+    }
+    
+    .home-image-cont .left .left-main-cont footer .upload_btn {
+      margin-bottom: 20px;
+    }
+    .search_bar_mobile {
+      visibility: visible;
+      right: 265px;
     }
     }
   
@@ -859,11 +876,18 @@ text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
-  .recent_cont {
-    padding: 20px;
+  .home_small-cont{
+    padding: 5px;
+    margin-top: 20px;
+  }    
+  
+  .home_small-cont > header{
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
-
+  
   .recent_cont > header h2 {
+    margin-top: 10px;
     font-size: 1.4rem;
   }
 
@@ -957,9 +981,6 @@ color: var(--deep-blue);
 margin-bottom: 20px;
 }
 @media screen and (max-width: 600px ) {
-  .home_small-cont{
-    padding: 0 0 0 0;
-  }
   .news_cont > .right {
     width: 70%;
     padding: 0px 10px 0px 0px;
@@ -973,13 +994,7 @@ margin-bottom: 20px;
   .news_cont .left{
     padding: 0px 0px 0px 0px;
   }
-  .news_cont .left img{
-    
-  }
-}
-
-.footer_cont > main {
-/* height: 600px; */
+  
 }
 
 .footer_cont > header svg {
@@ -1018,6 +1033,7 @@ font-weight: 200;
 
 .footer_cont main .middle {
 width: 20%;
+
 }
 
 .footer_cont > main > .middle h4 {

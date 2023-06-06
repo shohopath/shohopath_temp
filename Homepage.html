@@ -306,25 +306,23 @@
       </div>
     </div>
 
+    <div class="search_mobile">
+      <div class="search_bar_mobile">
+        <input class="search-input" type="text" placeholder="Search for a subject or a chapter">
+        <svg class="search-icon" onclick="focusInput()" onmouseenter="focusInput()">
+          <use href="icons.svg#icon__search"></use>
+        </svg>
+       
+        <script>
+          const focusInput = () => {
+            document.querySelector('.search-input').focus()
+            document.querySelector('.search-icon').focus()
+          }
+        </script>
+      </div> 
+    </div>
 
     <div class="bottom-nav ">
-    <ul>
-      <li>
-        <div class="search_bar_mobile">
-          <input class="search-input" type="text" placeholder="Search for a subject or a chapter">
-          <svg class="search-icon" onclick="focusInput()" onmouseenter="focusInput()">
-            <use href="icons.svg#icon__search"></use>
-          </svg>
-         
-          <script>
-            const focusInput = () => {
-              document.querySelector('.search-input').focus()
-              document.querySelector('.search-icon').focus()
-            }
-          </script>
-        </div> 
-      </li>
-    </ul>
       <ul>
         <!-- <li>
           <p>English</p>

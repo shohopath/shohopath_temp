@@ -307,7 +307,24 @@
     </div>
 
 
-    <div class="bottom-nav">
+    <div class="bottom-nav ">
+    <ul>
+      <li>
+        <div class="search_bar_mobile">
+          <input class="search-input" type="text" placeholder="Search for a subject or a chapter">
+          <svg class="search-icon" onclick="focusInput()" onmouseenter="focusInput()">
+            <use href="icons.svg#icon__search"></use>
+          </svg>
+         
+          <script>
+            const focusInput = () => {
+              document.querySelector('.search-input').focus()
+              document.querySelector('.search-icon').focus()
+            }
+          </script>
+        </div> 
+      </li>
+    </ul>
       <ul>
         <!-- <li>
           <p>English</p>
@@ -463,7 +480,7 @@
   <!-- Navbar End -->
 
   <!-- Upload Section Start -->
-  <div class="home-image-cont">
+  <div class="home-image-cont container-fluid">
     <div class="left">
       <div class="left-main-cont">
         <header class="welcome-text">
@@ -836,7 +853,7 @@
   <!-- New Uploads End-->
 
 
-
+ <!-- News & Updates Start-->
   <div class="home_small-cont news_cont">
     <div class="left">
       <img src="img/books.png" alt="">
@@ -851,9 +868,9 @@
       </p>
     </div>
   </div>
+ <!-- News & Updates End-->
 
-
-  <!-- News & Updates Start-->
+  <!-- Footer Start-->
   <div class="footer_cont">
     <header>
       <svg>
@@ -966,9 +983,9 @@
       </div>
     </main>
   </div>
-  <!-- News & Updates End-->
+<!-- Footer End-->
 
-  <!-- Footer End-->
+
   <!-- Back to Top -->
   <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
     <script src="img/https://cdn.lordicon.com/bhenfmcm.js"></script>

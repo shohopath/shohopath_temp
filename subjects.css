@@ -77,13 +77,17 @@
     padding-bottom: 40px;
 }
 
-.subjects ul {
+.subjects {
     width: 100%;
+}
+
+.subjects ul {
+    width: 100% !important;
     display: flex;
     gap: 30px;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    padding: 30px;
 }
 
 

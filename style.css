@@ -43,6 +43,7 @@ margin: 0;
 --container-white: #f5fafc;
 --container-white-low: rgba(245, 250, 252, 0.808);
 --light-black: rgb(36, 36, 36);
+--paste-green: rgb(0, 143, 71);
 }
 
 /* Body Styles */ 

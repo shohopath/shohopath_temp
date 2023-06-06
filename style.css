@@ -606,6 +606,16 @@ nav a {
   .home-image-cont .right img {
     height: 95%;
   }
+  .search_mobile {
+    z-index: 2;
+    position: absolute;
+    /* bottom: 100%; */
+    top: max(90px, 9.5vh);
+    background: var(--light-sky-blue);
+    padding: 8px 16px;
+    border-radius: 0 0 0 12px;
+  }
+
   .search_bar_mobile {
     visibility: hidden; 
     right: 265px;

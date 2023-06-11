@@ -954,18 +954,26 @@ text-decoration: none;
 }
 
 /*subject*/
+.upload-type{
+  background: var(--pink);
+  border-radius: 8px;
+  padding: 4px 12px;
+  height: min-content;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: default;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .upload_subject{
   border-radius: 12px;
   max-width: 60%;
+  margin: 10px auto;
   background-color: var(--light-sky-blue);
-  display: flex;
-  flex-direction: column;
-  position: center;
-  padding: 0 10px 0 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: calc(23%);
-  margin-right: calc(23%);
+  padding: 20px;
 }
 
 .upload_subject header {
@@ -1023,15 +1031,9 @@ text-decoration: none;
 .upload_chapter{
   border-radius: 12px;
   max-width: 60%;
+  margin: 10px auto;
   background-color: var(--light-sky-blue);
-  display: flex;
-  flex-direction: column;
-  position: center;
-  padding: 0 10px 0 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: calc(23%);
-  margin-right: calc(23%);
+  padding: 20px;
 
 }
 
@@ -1092,7 +1094,7 @@ text-decoration: none;
   max-width: 60%;
   margin: 10px auto;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .category {
@@ -1116,10 +1118,40 @@ text-decoration: none;
   color: #999;
 }
 
-.form-check-input:checked{
-  background-color: var(--sky-blue);
-  border-color: var(--light-sky-blue)
+.category input[type="radio"] {
+  display: none;
 }
+
+.category label {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.category label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--deep-blue);
+  margin-right: 5px;
+  background-color: var(--deep-blue);
+  transition: background-color 0.3s ease;
+}
+
+.category input[type="radio"]:checked + label:before {
+  background-color: var(--pink);
+}
+
+.category input[type="radio"]:focus + label:before {
+  border-color: #555;
+}
+
+.category input[type="radio"]:hover + label:before {
+  border-color: #555;
+}
+
 
 #title .form-control{
   text-align: center;
@@ -1142,6 +1174,56 @@ label {
   height: 38px;
   
 }
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--pink);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload span {
+  font-size: 18px;
+  color: #999;
+}
+
+.file-upload:hover {
+  border-color: #555;
+}
+
+.file-upload.dragover {
+  background-color: #f2f2f2;
+}
+
+.upload-post{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.upload_btn{
+  
+  border-radius: 8px;
+  background: var(--deep-blue);
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: .8s ease-out;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+.upload_btn:hover{
+  background: var(--paste-green);
+}
+
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {

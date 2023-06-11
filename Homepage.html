@@ -506,6 +506,7 @@
 
   <!-- Subject select-->
   <div class="upload_subject">
+    <p class="upload-type">Create Post</p>
     <header>Choose <strong>SUBJECT</strong> you wanna post...</header>
     <container class="Subject">
       <ul>
@@ -536,7 +537,8 @@
 
   <!-- Chapter select-->
   <div class="upload_chapter">
-    <header>Please select the <strong>Chapter</strong> you would like to post!!</header>
+    <p class="upload-type">Create Post</p>
+    <header>Select <strong>Chapter</strong> you would like to post!!</header>
     <container class="chapter">
       <ul>
         <li class="chapter_list">
@@ -568,9 +570,9 @@
   <div class="post">
     <div class="category">
       <label for="notes">Notes</label>
-      <input id="notes" class="form-check-input" type="checkbox" checked>
+      <input id="notes" class="form-check-input" type="radio" name="category">
       <label for="class">Class</label>
-      <input id="class" class="form-check-input" type="checkbox">
+      <input id="class" class="form-check-input" type="radio" name="category">
     </div>
     
     <div class="form-group" id="title">
@@ -582,18 +584,103 @@
     </div>
     
     <div class="form-group" id="photo">
-      <input type="file" id="photo" class="form-control">
+      <label for="photo" class="file-upload">
+        <input type="file" id="photo" class="form-control" onchange="handleFileSelect(event)" accept="image/*">
+        <span>Click or drag and drop file here</span>
+      </label>
+      <div class="upload-post"><button type="submit" class="upload_btn">Upload post</button></div>
     </div>
-  </div>  
+    
+    <script>
+      function handleFileSelect(event) {
+        event.stopPropagation();
+        event.preventDefault();
+    
+        const fileInput = event.target;
+        const files = fileInput.files || event.dataTransfer.files;
+    
+        // Handle the selected file(s) here
+        // You can access the file(s) using the 'files' variable
+        
+        // Example: Log the file name(s)
+        for (let i = 0; i < files.length; i++) {
+          console.log(files[i].name);
+        }
+      }
+    
+      // Add click event listener to open file manager
+      const fileInput = document.getElementById('photo');
+      const fileLabel = document.querySelector('.file-upload span');
+    
+      fileLabel.addEventListener('click', function() {
+        fileInput.click();
+      });
+    
+      // Add drag and drop event listeners
+      const fileUpload = document.querySelector('.file-upload');
+    
+      fileUpload.addEventListener('dragover', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        fileUpload.classList.add('dragover');
+      });
+    
+      fileUpload.addEventListener('dragleave', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        fileUpload.classList.remove('dragover');
+      });
+    
+      fileUpload.addEventListener('drop', handleFileSelect);
+    </script>
+    
+    
+    <script>
+      function handleFileSelect(event) {
+        event.stopPropagation();
+        event.preventDefault();
+    
+        const fileInput = event.target;
+        const files = fileInput.files || event.dataTransfer.files;
+    
+        // Handle the selected file(s) here
+        // You can access the file(s) using the 'files' variable
+        
+        // Example: Log the file name(s)
+        for (let i = 0; i < files.length; i++) {
+          console.log(files[i].name);
+        }
+      }
+    
+      // Add drag and drop event listeners
+      const fileUpload = document.querySelector('.file-upload');
+    
+      fileUpload.addEventListener('dragover', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        fileUpload.classList.add('dragover');
+      });
+    
+      fileUpload.addEventListener('dragleave', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        fileUpload.classList.remove('dragover');
+      });
+    
+      fileUpload.addEventListener('drop', handleFileSelect);
+    </script>
+       
+  </div> 
+   
   <!-- Note select-->
 
   <!-- Class select-->
   <div class="post">
     <div class="category">
       <label for="notes">Notes</label>
-      <input id="notes" class="form-check-input" type="checkbox" >
+      <input id="notes" class="form-check-input" type="radio" name="category">
       <label for="class">Class</label>
-      <input id="class" class="form-check-input" type="checkbox" checked>
+      <input id="class" class="form-check-input" type="radio" name="category">
     </div>
     
     <div class="form-group" id="title">
@@ -613,7 +700,8 @@
           </span>
         </div>
       </div>
-    </div>       
+    </div> 
+    <div class="upload-post"><button type="submit" class="upload_btn">Upload post</button></div>      
   </div>
   <!-- Class select-->
 

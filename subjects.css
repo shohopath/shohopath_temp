@@ -10,13 +10,13 @@
     justify-content: center;
 }
 
-.subject__cont > header .top {
+.subject__cont > header > .top {
     display: flex;
     gap: 30px;
     justify-content: center;
 }
 
-.subject__cont > header .top > div {
+.info-box {
     padding: 20px;
     background: var(--light-sky-blue);
     background-color: #fff;
@@ -26,15 +26,15 @@
     font-size: 1.2rem;
 }
 
-.subject__cont > header .top > div > div {
+.info-box > div {
     margin-top: 10px;
 }
 
-.subject__cont > header > div div p {
+.info-box div p {
     display: inline-block;
 }
 
-.subject__cont header .top > div div p:nth-child(2) {
+.info-box div p:nth-child(2) {
     float: right;
 }
 

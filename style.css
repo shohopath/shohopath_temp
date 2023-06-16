@@ -6,6 +6,10 @@
   outline: none !important;
 }
 
+.hidden {
+  display: none;
+}
+
 p {
 margin-bottom: 0;
 }
@@ -611,6 +615,7 @@ nav a {
     visibility: none; 
     right: 265px;
   } 
+  
 
   @media screen and (max-width: 600px ) {
     .home-image-cont{
@@ -805,11 +810,11 @@ background: white;
 text-transform: uppercase;
 font-size: 1.4rem;
 font-weight: 500;
+color: var(--deep-blue-2);
 }
 
 .upload footer > .top p {
 font-size: 0.8rem;
-color: var(--deep-blue);
 }
 
 .upload footer > .bottom {
@@ -885,18 +890,18 @@ text-decoration: none;
 
 @media screen and (max-width: 600px) {
   .home_small-cont{
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
   }    
   
   .home_small-cont > header{
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 5px;
   }
   
-  .recent_cont > header h2 {
+  .home_small-cont > header h2 {
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .recent_cont > main {
@@ -913,22 +918,44 @@ text-decoration: none;
   .home_small-cont > main > ul> li{
     flex-basis: 49%;
     margin-bottom: 10px;
-
   }
+
+  .recent_cont > footer > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.8rem;
+    margin-top: -20px;
+  }
+
   .upload header img {
     height: 200px;
     width: 100%;
     object-fit: cover;
   }
+  .upload header .upload-type {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .upload footer > .top {
+    padding: 5px 10px;
+  }
   .upload footer > .top h4{
     font-size: .7rem
   }
   .upload footer > .top p{
-    font-size: .6rem
+    font-size: .45rem
+  }
+  .upload footer > .bottom {
+    padding: 15px 10px;
+  }
+  .upload footer > .bottom > .left {
+    width: 100%;
   }
   .upload footer > .bottom .left img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
   .upload footer > .bottom > .left > .right h4{
     font-size: .8rem;
@@ -936,6 +963,9 @@ text-decoration: none;
   }
   .upload footer > .bottom > .left > .right p{
     font-size: .5rem;
+  }
+  .upload footer > .bottom > .right {
+    display: none;
   }
   .upload footer > .bottom > .right p{
     font-size: .8rem;
@@ -1461,6 +1491,9 @@ fill: var(--container-white);
 width: 30px;
 height: 30px;
 }
+
+
+
 @media screen and (max-width: 600px ) {
   .footer_cont > main{
     display: list-item;
@@ -1523,8 +1556,13 @@ height: 30px;
   }
   .footer_cont main .right{
     top: 10px;
-    
   }
+  .footer_cont main .right .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
   .footer_cont main .right .middle img{
     height: 30px;
     width: 30px;

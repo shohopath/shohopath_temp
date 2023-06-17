@@ -53,6 +53,7 @@ margin: 0;
 --container-white-low: rgba(245, 250, 252, 0.808);
 --light-black: rgb(36, 36, 36);
 --paste-green: rgb(0, 143, 71);
+--star-yellow: #ffc040;
 }
 
 /* Body Styles */ 
@@ -537,6 +538,36 @@ cursor: pointer;
 .upload footer>.top p {
   font-size: 0.8rem;
 }
+
+.upload__class footer > .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload__class footer > .top .right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating svg {
+  fill: var(--star-yellow) !important;
+  stroke: black;
+  stroke-width: 0.75px;
+}
+
+.rating__small {
+  position: absolute;
+  height: 2rem;
+  width: max-content;
+  top: -2rem;
+  right: 0;
+  background: #fff;
+  padding: 4px 10px;
+}
+
+
+
 
 .upload footer>.bottom {
   display: flex;

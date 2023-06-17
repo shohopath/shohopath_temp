@@ -71,7 +71,7 @@
 
 
 .search_bar_mobile {
-  visibility: none;
+  visibility: invisible;
   right: 265px;
 }
 

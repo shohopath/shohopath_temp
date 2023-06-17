@@ -1,4 +1,10 @@
 /*login page*/
+input {
+  border-radius: 4px !important;
+  outline: none !important;
+}
+
+
 .login__cont {
     top: 3vh;
 }

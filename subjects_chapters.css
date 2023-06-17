@@ -1,3 +1,4 @@
+/* GENERAL + SUBJECT */
 .subject__cont {
     top: 9.5vh;
 }
@@ -149,3 +150,23 @@
 .subject__cont > footer {
     padding: 40px;
 }
+
+
+
+.subject footer .bottom .left {
+    width: min-content;
+}
+
+.subject footer .bottom .left svg {
+    fill: var(--paste-green);
+    margin-right: 15px;
+}
+
+.subject footer .bottom .right p {
+    color: var(--paste-green);
+}
+
+
+
+
+

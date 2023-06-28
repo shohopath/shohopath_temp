@@ -4,393 +4,102 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Create Post</title>
   <link rel="stylesheet" href="config.css">
 </head>
 <body>
-  <div class="popup__parent">
-    <div class="upload_subject popup hidden">
-      <header>
-        <h2>Which subject do you want to post about?</h2>
-      </header>
-      <container class="Subject">
-        <ul class="popup_select__list">
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
+  <div class="parentContainer">
+    <div class="container">
+      <div class="header">
+        <h2>Create Post</h2>
+        <svg><use href="icons.svg#icon__exit"></use></svg>
+      </div>
+      <div class="top">
+      <div class="left">
+        <img src="img/profile_image.jpg" alt="">
+      </div>
 
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Physics 1st Paper</h4>
-                <p>Chapters: 10</p>
-
-                
-              </div>
-            </footer>
-          </li>
-
-          
-        </ul>
-      </container>
+      <div class="right">
+        <h4>Sakib UL Hasan</h2>
+        <p>Adamjee Cantonment College</p>
+      </div>
+      </div>
+      <div class="bottom">
+        <button type="submit" class="select-btn-left">Notes</button>
+        <button type="submit" class="select-btn-right">Class</button>
+      </div>
+      <div class="form-group">
+    <textarea id="description" placeholder="Enter a description"></textarea>
+      </div>
+      <div class="form-group">
+    <label for="photo" class="file-upload">
+      <input type="file" id="photo" accept="image/*"> 
+      <svg><use href="icons.svg#icon__add-photo"></use></svg>
+      <span>Add photos <br> or drag and drop here</span>
+    </label>
+      </div>
+      <button type="submit" class="upload-btn">Post</button>
     </div>
-    <!-- Subject select-->
-  
-    <!-- Chapter select-->
-    <div class="upload_chapter popup hidden">
-      <header>
-        <h2>Please select the chapter (Physics 1st Paper)</h2>
-      </header>
-
-      <container class="chapter">
-        <ul class="popup_select__list">
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-
-          <li class="subject upload upload_select">
-            <header>
-              <img src="img/note_cover_2.jpg" alt="">
-            </header>
-
-            <footer>
-              <div class="top">
-                <h4>Chapter 1</h4>
-                <p>Vector</p>
-              </div>
-            </footer>
-          </li>
-        </ul>
-      </container>
-    </div>
-    <!-- Chapter select-->
-  
-    <!-- Note select-->
-    <div class="post popup">
-      <div class="category">
-        <label for="notes">Notes</label>
-        <input id="notes" class="form-check-input" type="radio" name="category">
-        <label for="class">Class</label>
-        <input id="class" class="form-check-input" type="radio" name="category">
+    <div class="container">
+      <div class="header">
+        <h2>Create Post</h2>
+        <svg><use href="icons.svg#icon__exit"></use></svg>
       </div>
-      
-      <div class="form-group" id="title">
-        <input type="text"  placeholder="Title" class="form-control">
+      <div class="top">
+      <div class="left">
+        <img src="img/profile_image.jpg" alt="">
       </div>
-      
-      <div class="form-group" id="description">
-        <input type="text" id="description" placeholder="Description" class="form-control">
+
+      <div class="right">
+        <h4>Sakib UL Hasan</h2>
+        <p>Adamjee Cantonment College</p>
       </div>
-      
-      <div class="form-group" id="photo">
-        <label for="photo" class="file-upload">
-          <input type="file" id="photo" class="form-control" onchange="handleFileSelect(event)" accept="image/*">
-          <span>Click or drag and drop file here</span>
-        </label>
-        <div class="upload-post"><button type="submit" class="upload_btn">Upload post</button></div>
       </div>
-      
-      <script>
-        function handleFileSelect(event) {
-          event.stopPropagation();
-          event.preventDefault();
-      
-          const fileInput = event.target;
-          const files = fileInput.files || event.dataTransfer.files;
-      
-          // Handle the selected file(s) here
-          // You can access the file(s) using the 'files' variable
-          
-          // Example: Log the file name(s)
-          for (let i = 0; i < files.length; i++) {
-            console.log(files[i].name);
-          }
-        }
-      
-        // Add click event listener to open file manager
-        const fileInput = document.getElementById('photo');
-        const fileLabel = document.querySelector('.file-upload span');
-      
-        fileLabel.addEventListener('click', function() {
-          fileInput.click();
-        });
-    
-      </script>
-      
-      
-      <script>      
-        fileUpload.addEventListener('dragover', function(event) {
-          event.stopPropagation();
-          event.preventDefault();
-          fileUpload.classList.add('dragover');
-        });
-      
-        fileUpload.addEventListener('dragleave', function(event) {
-          event.stopPropagation();
-          event.preventDefault();
-          fileUpload.classList.remove('dragover');
-        });
-      
-        fileUpload.addEventListener('drop', handleFileSelect);
-      </script>
-         
-    </div> 
-     
-    <!-- Note select-->
-  
-    <!-- Class select-->
-    <div class="post popup hidden">
-      <div class="category">
-        <label for="notes">Notes</label>
-        <input id="notes" class="form-check-input" type="radio" name="category">
-        <label for="class">Class</label>
-        <input id="class" class="form-check-input" type="radio" name="category">
+      <div class="bottom">
+        <button type="submit" class="select-btn-left">Notes</button>
+        <button type="submit" class="select-btn-right">Class</button>
       </div>
-      
-      <div class="form-group" id="title">
-        <input type="text"  placeholder="Title" class="form-control">
+      <div class="form-group">
+    <textarea id="description" placeholder="Enter a description"></textarea>
       </div>
-      
-      <div class="form-group" id="description">
-        <input type="text" id="description" placeholder="Description" class="form-control">
-      </div>
-      
       <div class="form-group" id="class-link">
         <div class="input-group">
           <input type="url" id="class-link-input" class="form-control" placeholder="Add Link Here">
           <div class="input-group-append">
             <span class="input-group-text">
-              <i class="fas fa-link"></i>
+              <svg><use href="icons.svg#icon__link"></use></svg>
             </span>
           </div>
         </div>
-      </div> 
-      <div class="upload-post"><button type="submit" class="upload_btn">Upload post</button></div>      
-    </div>
-    <!-- Class select-->
-  
-  
-  </div>
+      </div>
+      <div  class="rate">
+        <span><h4>How much you wanna rate this video?</h4></span>
+        <div class="rating"> <svg>
+          <use href="icons.svg#icon__star-fill"></use>
+        </svg>
 
+        <svg>
+          <use href="icons.svg#icon__star-fill"></use>
+        </svg>
+
+        <svg>
+          <use href="icons.svg#icon__star-fill"></use>
+        </svg>
+
+        <svg>
+          <use href="icons.svg#icon__star-fill"></use>
+        </svg>
+
+        <svg>
+          <use href="icons.svg#icon__star-fill"></use>
+        </svg>
+      </div>
+    </div>
+    <button type="submit" class="upload-btn">Post</button>
+    </div>
+      
+  
+
+  <script src="script.js"></script>
 </body>
 </html>

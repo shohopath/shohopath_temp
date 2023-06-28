@@ -802,10 +802,10 @@ h2 {
   font-size: 0.9rem;
 }
 
-.container> bottom {
+.button{
   margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   
 }
 .select-btn-left,

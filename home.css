@@ -71,14 +71,12 @@
 
 
 .search_bar_mobile {
-  display: none;
-  right: 265px;
+  display: none; /* Hide the element by default */
 }
-
 
 @media screen and (max-width: 600px) {
   .home-image-cont {
-    padding-top: 150px;
+    padding-top: 60px;
   }
 
   .home-image-cont .left .left-main-cont {
@@ -116,23 +114,80 @@
   }
 
   .search_mobile {
-    z-index: 2;
-    position: fixed;
-    /* bottom: 100%; */
-    height: 60px;
-    top: max(90px, 9.5vh);
-    /*background: var(--light-sky-blue);*/
-    padding: 8px 16px;
-    border-radius: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 48px; /* Adjust the height as needed */
   }
-
+  
   .search_bar_mobile {
-    display: block;
-    right: 265px;
+    width: 60%;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 5px;
   }
-}
 
+  .search-input-mobile {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: small;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #333333;
+  }
+  
+  .search-input-mobile::placeholder {
+    color: #999999;
+  }
+  
+  .search-input-mobile:hover {
+    width: 100%;
+  }
+  
+  .search-icon {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .search-icon::after {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #999999;
+    transition: transform 0.3s;
+  }
+  
+  .search-icon.active::after {
+    transform: rotate(45deg);
+    color: var(--light-sky-blue);
+  }
 
+  .bottom-nav{
+    top: 33px;
+    right: 74px;
+    background: none;
+    padding: 0px;
+    border-radius: 0 0 0 0;
+  }
+  .bottom-nav > ul {
+    gap: 15px;
+  }
+
+}  
 
 
 
@@ -179,6 +234,9 @@
   cursor: pointer;
   transition: .3s ease;
 }
+.show_more {
+  display: none;
+}
 
 .show-more:hover {
   /* box-shadow: 0px 2px 10px rgb(211 219 224);  */
@@ -212,6 +270,7 @@
 }
 
 @media screen and (max-width: 600px) {
+  
   .home_small-cont {
     padding: 10px;
     margin-top: 20px;
@@ -265,6 +324,7 @@
 
   .upload footer>.top {
     padding: 5px 10px;
+    height: 50px;
   }
 
   .upload footer>.top h4 {
@@ -306,7 +366,19 @@
   }
 
   .home_small-cont>main .show-more {
-    overflow: visible;
+    display: none;
+  }
+  .show_more {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .show_more h5{
+    font-size: small;
+    color: var(--deep-blue);
+    text-decoration: 2px underline ;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--deep-blue);
   }
 }
 
@@ -462,7 +534,6 @@
 
 
 
-
 .footer_cont main .right {
   width: 30%;
   color: var(--container-white-low);
@@ -529,7 +600,6 @@
   display: flex;
   list-style-type: none;
   gap: 25px;
-  margin-left: 25px;
   margin-top: 20px;
 }
 
@@ -629,8 +699,8 @@
   }
 
   .footer_cont main .right .middle img {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
   }
 
   .footer_cont main .right .middle ul,
@@ -638,17 +708,14 @@
     justify-content: space-evenly;
     display: flex;
     list-style-type: none;
-    gap: 25px;
-    margin-left: 30px;
+    gap: 30px;
     /* margin-top: 20px; */
     align-items: center;
   }
 }
 
 
-.btn {
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn { 
   color: var(--sky-blue);
   text-decoration: none;
   transition: all 0.3s ease-out;
@@ -660,12 +727,24 @@
 }
 
 .back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  bottom: 2px;
-  right: 2px;
-  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
   background-color: transparent;
-  border-color: transparent;
+  border: none;
+}
+
+.back-to-top svg {
+  width: 40px;
+  height: 40px;
+  
 }
 
 .back-to-top:hover {

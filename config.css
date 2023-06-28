@@ -802,7 +802,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-.bottom {
+.container> bottom {
   margin-top: 10px;
   display: flex;
   flex-direction: column;

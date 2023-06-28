@@ -308,20 +308,13 @@
     </div>
   </nav>
   <section class="mobile-on-mobile">
-    <div class="search_mobile">
+    <div class="search_mobile fixed">
       <div class="search_bar_mobile">
-        <input class="search-input" type="text" placeholder="Search for a subject or a chapter">
-        <svg class="search-icon" onclick="focusInput()" onmouseenter="focusInput()">
+        <input class="search-input-mobile" type="text" placeholder="Search for a subject or a chapter">
+        <svg class="search-icon" >
           <use href="icons.svg#icon__search"></use>
         </svg>
-       
-        <script>
-          const focusInput = () => {
-            document.querySelector('.search-input').focus()
-            document.querySelector('.search-icon').focus()
-          }
-        </script>
-      </div> 
+      </div>
     </div>
 
     <div class="bottom-nav ">
@@ -873,6 +866,8 @@
           </svg>
         </div>
       </ul>
+      <div class="show_more"><h5>Show more</h5></div>
+      
 
       
     </main>
@@ -1015,29 +1010,27 @@
 
   <!-- Back to Top -->
   <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-    <script src="img/https://cdn.lordicon.com/bhenfmcm.js"></script>
-    <lord-icon src="img/https://cdn.lordicon.com/xsdtfyne.json" trigger="loop" delay="100" colors="primary:#1070B7"
-      style="width:50px;height:50px">
-    </lord-icon>
+    <svg><use href="icons.svg#icon__back-to-top"></use></svg>
   </a>
   <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-          $('#back-to-top').fadeIn();
-        } else {
-          $('#back-to-top').fadeOut();
-        }
+    window.addEventListener('scroll', function() {
+      var backToTopButton = document.getElementById('back-to-top');
+      if (window.scrollY >= 200) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+  
+    document.getElementById('back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
       });
-      // scroll body to 0px on click 
-      $('#back-to-top').click(function () {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 400);
-        return false;
-      });
-    }); 
+    });
   </script>
+  
 
   <!-- jQuery library -->
   <script src="img/https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -546,8 +546,8 @@ cursor: pointer;
 
 .upload__class footer > .top .right {
   display: flex;
-  align-items: center;
   gap: 5px;
+  flex-direction: row;
 }
 
 .rating svg {
@@ -571,6 +571,7 @@ cursor: pointer;
 
 .upload footer>.bottom {
   display: flex;
+  flex-direction: row;
   padding: 15px;
   align-items: center;
 }
@@ -781,6 +782,7 @@ h2 {
 .top {
   margin-top: 10px;
   display: flex;
+  flex-direction: column;
 }
 
 .left img {
@@ -790,7 +792,7 @@ h2 {
 }
 
 .right {
-  margin-left: 10px;
+  margin-left: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -803,6 +805,7 @@ h2 {
 .bottom {
   margin-top: 10px;
   display: flex;
+  flex-direction: column;
   
 }
 .select-btn-left,

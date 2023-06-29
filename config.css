@@ -573,7 +573,7 @@ cursor: pointer;
   display: flex;
   flex-direction: row;
   padding: 15px;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .upload footer>.bottom>.left {
@@ -779,10 +779,10 @@ h2 {
   color: #333;
 }
 
-.top {
+.profile-top {
   margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .left img {

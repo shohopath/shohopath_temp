@@ -587,14 +587,27 @@ cursor: pointer;
 
 .upload__class footer > .top .right {
   display: flex;
-  gap: 5px;
-  flex-direction: row;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
 }
 
 .rating svg {
   fill: var(--star-yellow) !important;
   stroke: black;
-  stroke-width: 0.75px;
+  stroke-width: 0.5px;
+  height: 15px !important;
+  width: 15px !important;
+}
+
+.rating p {
+  font-size: 1rem !important;
+  top: 1px;
 }
 
 .rating__small {
@@ -603,7 +616,7 @@ cursor: pointer;
   width: max-content;
   top: -2rem;
   right: 0;
-  background: #fff;
+  background: var(--light-sky-blue);
   padding: 4px 10px;
 }
 

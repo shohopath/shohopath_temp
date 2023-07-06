@@ -101,36 +101,6 @@
     flex-direction: column;
 }
 
-.subject__cont main header .top {
-    margin-top: 40px;
-    display: flex;
-    height: min-content;
-    justify-self: center;
-    width: min-content;
-    box-shadow: 0 2px 6px #effaff;
-}
-
-.subject__cont main header .top button {
-    background: #fff;
-    border: none;
-    font-size: 1.5rem;
-    padding: 10px 25px;
-    border-radius: 15px 0 0 15px;
-    text-transform: uppercase;
-
-}
-
-.subject__cont main header .top button:nth-child(1) {
-    background: var(--deep-blue);
-    background: var(--pink);
-    /* background: var(--pink-red); */
-    color: #fff;
-}
-
-.subject__cont main header .top button:nth-child(2) {
-    border-radius: 0 15px 15px 0;
-}
-
 .subject__cont main header .bottom {
     align-self: flex-end;    
     width: fit-content;

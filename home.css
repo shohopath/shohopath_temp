@@ -270,6 +270,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   
   .home_small-cont {
     padding: 10px;
@@ -278,12 +279,13 @@
 
   .home_small-cont>header {
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 0;
   }
 
   .home_small-cont>header h2 {
-    margin-top: 10px;
-    font-size: 1.6rem;
+    margin-top: 7.5px;
+    font-size: 1.3rem;
+    margin-left: 0;
   }
 
   .recent_cont>main {
@@ -325,6 +327,7 @@
   .upload footer>.top {
     padding: 5px 10px;
     height: 50px;
+    height: fit-content;
   }
 
   .upload footer>.top h4 {
@@ -336,11 +339,11 @@
   }
 
   .upload footer>.bottom {
-    padding: 15px 10px;
+    padding: 7.5px;
   }
 
   .upload footer>.bottom>.left {
-    width: 100%;
+    width: 80%;
   }
 
   .upload footer>.bottom .left img {
@@ -348,21 +351,38 @@
     height: 30px;
   }
 
+  .upload footer > .bottom > .left > .right {
+    margin-left: 5px;
+  }
+
   .upload footer>.bottom>.left>.right h4 {
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 400;
   }
 
   .upload footer>.bottom>.left>.right p {
-    font-size: .5rem;
+    font-size: .45rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
   }
 
   .upload footer>.bottom>.right {
-    display:inline;
+    display: inline-block;
+    display: flex;
+    height: 17.5px; 
+    gap: 2px;
+  }
+
+  .upload footer>.bottom>.right svg {
+    width: 17.5px;
+    height: 17.5px;
   }
 
   .upload footer>.bottom>.right p {
-    font-size: .8rem;
+    font-size: .5rem;
+    text-align: center;
   }
 
   .home_small-cont>main .show-more {
@@ -438,6 +458,7 @@
   font-size: 5rem;
   color: var(--deep-blue);
   margin-bottom: 20px;
+  width: max-content;
 }
 
 @media screen and (max-width: 600px) {
@@ -465,6 +486,7 @@
   width: 100vw;
   height: calc(100vw / 12);
   fill: var(--deep-blue-2);
+  top: 2px
 }
 
 .footer_cont > main {
@@ -713,6 +735,17 @@
     margin-left: 0px;
     /* margin-top: 20px; */
     align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .upload footer>.bottom>.left>.right h4 {
+    font-size: .6rem;
+  }
+
+  .upload footer>.bottom>.left>.right p {
+    font-size: .4rem;
   }
 }
 

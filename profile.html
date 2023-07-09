@@ -8,7 +8,8 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="img/https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +99,7 @@
                     </div>
 
                     <div class="bottom">
-                      <div class="left">
+                      <div class="left progress_cont">
                         <div class="progress-bar">
                           <div class="bar"></div>
                         </div>
@@ -106,7 +107,7 @@
                       </div>
                     </div>
 
-                    <div class="more-bottom">
+                    <div class="more-bottom info_bar">
                       <div class="total_notes">
                         <svg>
                           <use href="icons.svg#icon__pages"></use>
@@ -137,7 +138,7 @@
                     </div>
 
                     <div class="bottom">
-                      <div class="left">
+                      <div class="left progress_cont">
                         <div class="progress-bar">
                           <div class="bar"></div>
                         </div>
@@ -145,7 +146,7 @@
                       </div>
                     </div>
 
-                    <div class="more-bottom">
+                    <div class="more-bottom info_bar">
                       <div class="total_notes">
                         <svg>
                           <use href="icons.svg#icon__pages"></use>
@@ -176,7 +177,7 @@
                     </div>
 
                     <div class="bottom">
-                      <div class="left">
+                      <div class="left progress_cont">
                         <div class="progress-bar">
                           <div class="bar"></div>
                         </div>
@@ -184,7 +185,7 @@
                       </div>
                     </div>
 
-                    <div class="more-bottom">
+                    <div class="more-bottom info_bar">
                       <div class="total_notes">
                         <svg>
                           <use href="icons.svg#icon__pages"></use>
@@ -215,7 +216,7 @@
                     </div>
 
                     <div class="bottom">
-                      <div class="left">
+                      <div class="left progress_cont">
                         <div class="progress-bar">
                           <div class="bar"></div>
                         </div>
@@ -223,7 +224,7 @@
                       </div>
                     </div>
 
-                    <div class="more-bottom">
+                    <div class="more-bottom info_bar">
                       <div class="total_notes">
                         <svg>
                           <use href="icons.svg#icon__pages"></use>
@@ -254,12 +255,10 @@
                     </div>
 
                     <div class="bottom">
-                      <div class="left">
-                        <p>Chapter 1: Thermodynamics</p>
-                      </div>
+                      <p>Chapter 1: Thermodynamics</p>
                     </div>
 
-                    <div class="more-bottom">
+                    <div class="more-bottom info_bar">
                       <div class="total_notes">
                         <svg>
                           <use href="icons.svg#icon__pages"></use>
@@ -298,13 +297,25 @@
             <a class="nav-link active" href="#">Saved</a>
           </li>
 
-
+          <li class="nav-item-profile">
+            <a class="nav-link active" href="#"><img class="img-fluid rounded-circle" src="img/profile_image.jpg"
+                alt="Profile"></a>
+          </li>
         </ul>
       </div>
     </div>
+  </nav>
+  <section class="mobile-on-mobile">
+    <div class="search_mobile fixed">
+      <div class="search_bar_mobile">
+        <input class="search-input-mobile" type="text" placeholder="Search for a subject or a chapter">
+        <svg class="search-icon">
+          <use href="icons.svg#icon__search"></use>
+        </svg>
+      </div>
+    </div>
 
-
-    <div class="bottom-nav">
+    <div class="bottom-nav ">
       <ul>
         <!-- <li>
           <p>English</p>
@@ -461,34 +472,29 @@
       </div>
 
     </div>
-  </nav>
-
+  </section>
 
   <!-- Navbar End -->
 
   <main>
     <div class="container-fluid">
       <div class="profile-header">
-        <div class="row g-0">
-          <div class="col-md-2"><img class="profile rounded-circle" src="img/profile_image.jpg" alt="Profile"></div>
-          <div class="col-md-8">
+        <div class="img_info">
+          <div class="profile_image"><img class="profile rounded-circle" src="img/profile_image.jpg" alt="Profile"></div>
+          <div class="profile-info">
             <p class="Name">Sakib UL Hasan</p>
-            <p class="College fs-4">Adamjee Cantonment College</p>
+            <p class="College">Adamjee Cantonment College</p>
           </div>
-
-          <div class="col-md-2">
-            <div class="class-label">
+        </div>    
+          <div class="class-label">
               <p>Class 11</p>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="row g-0">
-
         <!-- info bar Start -->
-        <div class="row g-0 profile__bottom">
-          <div class="col-4 col-sm-3 col-md-3 g-1 profile__small-box">
+        <div class="profile__bottom">
+          <div class="profile__small-box">
             <div class="profile-info">
               <p>Science</p>
               <p>Bangla version</p>
@@ -496,23 +502,23 @@
             </div>
           </div>
 
-          <div class="col-4 col-sm-3 col-md-3 g-1 profile__small-box">
+          <div class="profile__small-box">
             <div class="profile-info">
               <div>
                 <p>Total uploads</p> <p>12</p>
               </div>
   
               <div>
-                <p>Notes</p> <p>2</p>
+                <p>Notes </p> <p>2</p>
               </div>
   
               <div>
-                <p>Classes</p> <p>10</p>
+                <p>Classes </p> <p>10</p>
               </div>
             </div>
           </div>
 
-          <div class="col-4 col-sm-3 col-md-2 g-1 profile__small-box trophy__small-box">
+          <div class="profile__small-box trophy__small-box">
             <div class="profile-info">
               <img src="img/trophy.png" alt="">
 
@@ -522,7 +528,7 @@
         </div>
 
         <!-- Uploads Start -->
-        <div class="col-md-12 profile__uploads">
+        <div class="profile__uploads">
           <header>
             <h2>Sakib's recent uploads</h2>
           </header>
@@ -775,8 +781,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
   </main>
 
 
@@ -790,5 +794,4 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

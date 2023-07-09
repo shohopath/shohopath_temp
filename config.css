@@ -238,7 +238,7 @@ nav a {
 }
 
 .search-result_bar {
-  display:block;
+  display:none;
   width: 20vw;
   height: 40vh;
   overflow: auto;
@@ -292,6 +292,10 @@ nav a {
 .search-result_item > .right > .bottom {
   display: flex;
   width: 80%;
+}
+
+.search_bar_mobile {
+  display: none; /* Hide the element by default */
 }
 
 .progress_cont {
@@ -1044,11 +1048,86 @@ cursor: pointer;
 
 
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   .navbar-brand img {
     display: none;
   }
+
+  .search_mobile {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 48px; /* Adjust the height as needed */
+  }
+  
+  .search_bar_mobile {
+    width: 60%;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .search-input-mobile {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: small;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #333333;
+  }
+  
+  .search-input-mobile::placeholder {
+    color: #999999;
+  }
+  
+  .search-input-mobile:hover {
+    width: 100%;
+  }
+  
+  .search-icon {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .search-icon::after {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #999999;
+    transition: transform 0.3s;
+  }
+  
+  .search-icon.active::after {
+    transform: rotate(45deg);
+    color: var(--light-sky-blue);
+  }
+
+  .bottom-nav{
+    top: 33px;
+    right: 74px;
+    background: none;
+    padding: 0px;
+    border-radius: 0 0 0 0;
+  }
+  .bottom-nav > ul {
+    gap: 15px;
+  }
+
 
   .upload_subject,
   .upload_chapter,
@@ -1090,7 +1169,6 @@ cursor: pointer;
   color: var(--deep-blue-2);
   margin-bottom: 20px !important;
 }
-
 
 
 

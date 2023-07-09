@@ -1,40 +1,38 @@
 /* Profile page */
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Quicksand&display=swap');
-main {
+.main {
   padding-top: 80px;
 }
-
-
-
 .profile {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 .profile-header {
-  display: inline-flexbox;
-  margin-top: 10px;
-  background: linear-gradient(120deg, #c5d7eb 0%, #96a6b9 100%);
+  display: flex;
+  justify-content: space-between;
   border-radius: 12px;
   text-align: center;
   margin: 70px auto 30px auto;
   width: 90%;
-  background: var(--light-sky-blue);
   background: #fff;
   padding: 40px;
   box-shadow: 0 2px 7px var(--container-white);
 }
 
-.profile-header div:nth-child(2),
-.profile-header div:nth-child(3) {
+.profile_image,
+.profile-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.img_info {
+  display: flex;
 }
 
 .profile-header p {
@@ -43,7 +41,6 @@ main {
   color: #333;
   float: left;
 }
-
 .Name {
   font-size: 2.5rem !important;
   text-transform: uppercase;
@@ -138,6 +135,7 @@ main {
 
 
 .profile__bottom {
+  display: flex;
   width: 90%;
   margin: 0 auto 30px auto;
 }
@@ -191,3 +189,112 @@ main {
   grid-gap: 20px;
 } */
 
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding-top: 0px;
+  }
+  .profile {
+    width: 50px;
+    height: 50px;
+  }
+  .profile-header {
+    padding: 5px !important;
+  }
+  .profile-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .Name {
+    font-size: .9rem !important;
+  }
+  .College {
+    font-size: .5rem !important;
+  }
+  .class-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .class-label p {
+    font-size: .6rem !important;
+    margin: 7px !important;
+  }
+  .profile__small-box {
+    font-size: .6rem;
+    margin-right: 10px;
+  }
+  .profile-info div p:nth-child(1) {
+   width: 70%;
+  }
+  .trophy__small-box img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0px;
+  }
+  .trophy__small-box h2 {
+    font-size: .9rem;
+    color: var(--deep-blue-2);
+  }
+
+  .uploads-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .upload {
+    flex-basis: 45%;
+    margin-bottom: 10px;
+  }
+  .upload header .upload-type {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+  .upload header img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .upload footer>.bottom {
+    padding: 5px 10px;
+    height: 50px;
+    height: fit-content;
+  }
+  .upload footer>.bottom>.left {
+    display: flex;
+    width: 80%;
+  }
+  .upload footer>.bottom>.left>.right h4 {
+    font-size: .8rem !important;
+  }
+  .upload footer>.bottom>.left>.right p {
+    font-size: .45rem !important;
+  }
+  .upload footer>.bottom>.right {
+    display: flex;
+    height: 17.5px;
+    gap: 2px;
+  }
+  .upload footer>.bottom>.right svg {
+    width: 17.5px;
+    height: 17.5px;
+  }
+  .upload footer>.bottom>.right p {
+    font-size: .5rem;
+    text-align: center;
+  }
+  .upload footer>.bottom>.right {
+    height: 1em;
+    width: 50%;
+    position: absolute;
+    width: max-content;
+    right: 0;
+
+    padding: 4px;
+  }
+
+}

@@ -1,6 +1,6 @@
 /* Profile page */
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Quicksand&display=swap');
-.main {
+body > main {
   padding-top: 80px;
 }
 .profile {
@@ -15,8 +15,7 @@
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
-  text-align: center;
-  margin: 70px auto 30px auto;
+  margin: 90px auto 30px auto;
   width: 90%;
   background: #fff;
   padding: 40px;
@@ -51,6 +50,11 @@
   color: var(--deep-blue) !important;
 }
 
+.class-label {
+  align-self: center;
+  margin-right: 20px;
+}
+
 .class-label p {
   background: var(--light-sky-blue);
   padding: 10px 20px;
@@ -59,6 +63,7 @@
   color: #fff;
   border-radius: 12px;
   color: var(--deep-blue-2);
+  /* margin-left: 20px; */
 }
 
 
@@ -89,6 +94,7 @@
 
 .profile__small-box p {
   color: black !important;
+  width: max-content;
 }
 
 
@@ -99,7 +105,7 @@
 
 
 .profile-info div p:nth-child(1) {
-  width: 80%;
+  /* width: 80%; */
 }
 
 .profile-info div p:nth-child(2) {
@@ -111,6 +117,16 @@
   margin: 0;
   font-size: 20px;
   color: #333;
+}
+
+.upload-info div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-info div:nth-child(1) p:nth-child(1) {
+  margin-right: 20px;
 }
 
 .trophy__small-box div {
@@ -191,16 +207,22 @@
 
 
 @media only screen and (max-width: 600px) {
-  .main {
+  body > main {
     padding-top: 0px;
   }
-  .profile {
-    width: 50px;
-    height: 50px;
-  }
+
   .profile-header {
-    padding: 5px !important;
+    padding: 20px 5px !important;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 15px;
   }
+
+  .profile {
+    width: 75px;
+    height: 75px;
+  }
+  
   .profile-info {
     flex-direction: column;
     justify-content: center;
@@ -208,35 +230,63 @@
     padding: 10px;
   }
   .Name {
-    font-size: .9rem !important;
+    font-size: 1.3rem !important;
+    width: max-content;
   }
   .College {
-    font-size: .5rem !important;
+    font-size: .6rem !important;
   }
   .class-label {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    margin-right: 10px;
+
   }
   .class-label p {
-    font-size: .6rem !important;
-    margin: 7px !important;
+    font-size: .8rem !important;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 6px;
   }
+
+  .profile__bottom {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px 2.5px;
+  }
+
+
   .profile__small-box {
-    font-size: .6rem;
+    font-size: .7rem;
     margin-right: 10px;
   }
   .profile-info div p:nth-child(1) {
-   width: 70%;
+   /* width: 70%; */
   }
+
+  .trophy__small-box .profile-info {
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+
   .trophy__small-box img {
-    width: 25px;
-    height: 25px;
-    margin-right: 0px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
   .trophy__small-box h2 {
-    font-size: .9rem;
+    font-size: 1.4rem;
     color: var(--deep-blue-2);
+  }
+
+  .profile__uploads {
+    width: 95%;
+  }
+
+  .profile__uploads header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
   }
 
   .uploads-list ul{
@@ -245,14 +295,17 @@
     margin-left: 0px;
     justify-content: space-between;
     align-items: center;
+    gap: 5px 0;
   }
   .upload {
-    flex-basis: 45%;
+    flex-basis: 49%;
     margin-bottom: 10px;
+    border-radius: 8px;
   }
   .upload header .upload-type {
-    font-size: 0.75rem;
-    padding: 3px 8px;
+    font-size: 0.65rem;
+    padding: 3px 5px;
+    border-radius: 4px;
   }
   .upload header img {
     height: 200px;
@@ -260,7 +313,8 @@
     object-fit: cover;
   }
   .upload footer>.bottom {
-    padding: 5px 10px;
+    padding: 10px 5px;
+    padding-right: 10px;
     height: 50px;
     height: fit-content;
   }
@@ -268,11 +322,21 @@
     display: flex;
     width: 80%;
   }
+
+  .upload footer>.bottom>.left>.right {
+    width: 85%;
+  }
+
   .upload footer>.bottom>.left>.right h4 {
     font-size: .8rem !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1em;
   }
   .upload footer>.bottom>.left>.right p {
     font-size: .45rem !important;
+    margin-top: 2px;
   }
   .upload footer>.bottom>.right {
     display: flex;
@@ -292,9 +356,19 @@
     width: 50%;
     position: absolute;
     width: max-content;
-    right: 0;
+    right: 2.5px;
 
     padding: 4px;
+  }
+
+  .rating {
+    padding: 2px 5px;
+    height: 1rem;
+    top: -1rem;
+  }
+
+  .rating svg {
+
   }
 
 }

@@ -1125,7 +1125,7 @@ cursor: pointer;
     border-radius: 0 0 0 0;
   }
   .bottom-nav > ul {
-    gap: 15px;
+    gap: 10px;
   }
 
 
@@ -1157,8 +1157,14 @@ cursor: pointer;
   background: #fff;
   padding: 4px;
   }
+
+  .rating {
+    margin-top: 1px;
+    margin-right: -2px;
+  }
+
   .rating svg {
-    width: 12.5px !important; 
+    width: 10px !important; 
   }
   
 }

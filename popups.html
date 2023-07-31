@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,106 +8,115 @@
   <title>Create Post</title>
   <link rel="stylesheet" href="config.css">
 </head>
+
 <body>
   <div class="parentContainer">
     <div class="container">
       <div class="header">
         <h2>Create Post</h2>
-        <svg><use href="icons.svg#icon__exit"></use></svg>
+        <svg>
+          <use href="icons.svg#icon__exit"></use>
+        </svg>
       </div>
       <div class="profile-top">
-      <div class="left">
-        <img src="img/profile_image.jpg" alt="profile image">
-      </div>
+        <div class="left">
+          <img src="img/profile_image.jpg" alt="profile image">
+        </div>
 
-      <div class="right">
-        <h4>Sakib UL Hasan</h2>
-        <p>Adamjee Cantonment College</p>
-      </div>
-      </div>
-      <div class="button">
-        <button type="submit" class="select-btn-left">Notes</button>
-        <button type="submit" class="select-btn-right">Class</button>
+        <div class="right">
+          <h4>Sakib UL Hasan</h2>
+            <p>Adamjee Cantonment College</p>
+        </div>
       </div>
       <div class="form-group">
-    <textarea id="description" placeholder="Enter a description"></textarea>
+        <textarea id="description" rows="4" placeholder="Enter a description"></textarea>
       </div>
       <div class="form-group">
-    <label for="photo" class="file-upload">
-      <input type="file" id="photo" accept="image/*"> 
-      <svg><use href="icons.svg#icon__add-photo"></use></svg>
-      <span>Add photos <br> or drag and drop here</span>
-    </label>
+        <label for="photo" class="file-upload">
+          <input type="file" id="photo" accept="image/*">
+          <svg>
+            <use href="icons.svg#icon__add-photo"></use>
+          </svg>
+          <span>Add photos <br> or drag and drop here</span>
+        </label>
       </div>
       <button type="submit" class="upload-btn">Post</button>
     </div>
-    <div class="container">
+    <div class="container upload-class__container">
       <div class="header">
         <h2>Create Post</h2>
-        <svg><use href="icons.svg#icon__exit"></use></svg>
+        <svg>
+          <use href="icons.svg#icon__exit"></use>
+        </svg>
       </div>
       <div class="profile-top">
-      <div class="left">
-        <img src="img/profile_image.jpg" alt="">
+        <div class="left">
+          <img src="img/profile_image.jpg" alt="">
+        </div>
+
+        <div class="right">
+          <h4>Sakib UL Hasan</h2>
+            <p>Adamjee Cantonment College</p>
+        </div>
       </div>
 
-      <div class="right">
-        <h4>Sakib UL Hasan</h2>
-        <p>Adamjee Cantonment College</p>
-      </div>
-      </div>
-      <div class="button">
-        <button type="submit" class="select-btn-left">Notes</button>
-        <button type="submit" class="select-btn-right">Class</button>
-      </div>
-      <div class="form-group">
-    <textarea id="description" placeholder="Enter a description"></textarea>
-      </div>
       <div class="form-group" id="class-link">
         <div class="input-group">
-          <input type="url" id="class-link-input" class="form-control" placeholder="Add Link Here">
+          <input type="url" id="class-link-input" class="form-control" placeholder="Enter class link">
           <div class="input-group-append">
             <span class="input-group-text">
-              <svg><use href="icons.svg#icon__link"></use></svg>
+              <svg>
+                <use href="icons.svg#icon__link"></use>
+              </svg>
             </span>
           </div>
         </div>
       </div>
-      <div  class="rate">
-        <span><h4>How much you wanna rate this video?</h4></span>
-        <div class="rating"> <svg>
-          <use href="icons.svg#icon__star-fill"></use>
-        </svg>
 
-        <svg>
-          <use href="icons.svg#icon__star-fill"></use>
-        </svg>
-
-        <svg>
-          <use href="icons.svg#icon__star-fill"></use>
-        </svg>
-
-        <svg>
-          <use href="icons.svg#icon__star-fill"></use>
-        </svg>
-
-        <svg>
-          <use href="icons.svg#icon__star-fill"></use>
-        </svg>
+      <div class="form-group">
+        <textarea id="description" rows="3" placeholder="Enter a description"></textarea>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="photo" class="file-upload">
-        <input type="file" id="photo" accept="image/*"> 
-        <svg><use href="icons.svg#icon__add-photo"></use></svg>
-        <span>Add Thumbnail <br> or drag and drop here</span>
-      </label>
-        </div>
-    <button type="submit" class="upload-btn">Post</button>
-    </div>
-      
-  
 
-  <script src="script.js"></script>
+      <div class="rate">
+        <div class="rating"> 
+          <span>Rate the class: </span>
+          <svg>
+            <use href="icons.svg#icon__star-fill"></use>
+          </svg>
+
+          <svg>
+            <use href="icons.svg#icon__star-fill"></use>
+          </svg>
+
+          <svg>
+            <use href="icons.svg#icon__star-fill"></use>
+          </svg>
+
+          <svg>
+            <use href="icons.svg#icon__star-fill"></use>
+          </svg>
+
+          <svg>
+            <use href="icons.svg#icon__star-fill"></use>
+          </svg>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="photo" class="file-upload">
+          <input type="file" id="photo" accept="image/*">
+          <svg>
+            <use href="icons.svg#icon__add-photo"></use>
+          </svg>
+          <span>Add Thumbnail <br> or drag and drop here</span>
+        </label>
+      </div>
+      <button type="submit" class="upload-btn">Post</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

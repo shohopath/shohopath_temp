@@ -301,7 +301,7 @@ nav a {
 .progress_cont {
   display: flex;
   align-items: center;
-  width: 80% !important;
+  /* width: 80% !important; */
 }
 
 .progress_cont p {
@@ -829,11 +829,19 @@ cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.upload-class__container {
+  max-width: 600px;
+}
+
 .header {
   padding: 5px;
   display: flex;
   justify-content: space-between;
   /*border-bottom: 1px solid #bfbebe;*/
+}
+
+.header h2 {
+  font-weight: 500;
 }
 
 .header svg {
@@ -851,14 +859,21 @@ cursor: pointer;
 } */
 
 .profile-top {
-  margin-top: 10px;
+  margin-top: 20px;
+  height: 50px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.profile-top .left {
+  height: 100%;
 }
 
 .left img {
   width: 50px;
   height: 50px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
@@ -869,24 +884,28 @@ cursor: pointer;
   justify-content: center;
 }
 
-.right p {
-  font-size: 0.9rem;
+.right h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.container .right p {
+  font-size: 0.7rem;
+  color: var(--deep-blue-2);
 }
 
 .button{
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
-  
+  justify-content: center;  
 }
 .select-btn-left,
 .select-btn-right {
   width: 80px;
   height: 30px;
   border: 0px  transparent;
-  font-size: larger;
-  
-  
+  font-size: 0.8rem;
 }
 
 .select-btn-left{
@@ -936,20 +955,21 @@ cursor: pointer;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .form-control {
   width: 90%;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 14px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .input-group-text >svg {
   margin-top: 0px !important; 
   height: 30px;
   width: 30px;
-  fill: var(--pink);
+  fill: var(--deep-blue);
   
 }
 
@@ -990,14 +1010,21 @@ cursor: pointer;
 .rate {
   margin-top: 20px;
   margin-bottom: 20px;
+  width: fit-content;
+  margin-left: 5px;
 }
 
 .rating {
   display: flex;
 }
+
+.rating span {
+  font-weight: 300;
+  margin-right: 10px;
+}
 .upload-btn {
   width: 100%;
-  background: var(--pink);
+  background: var(--deep-blue);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1036,8 +1063,9 @@ cursor: pointer;
 
 
 #description {
-  width: 90%;
-  height: 40%;
+  margin-top: 10px;
+  width: 95%;
+  height: 50%;
   border-radius: 12px;
   outline: none;
   border: none;

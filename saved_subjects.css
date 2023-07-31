@@ -1,0 +1,18 @@
+.subject__cont > main {
+  margin-top: 20px;
+}
+
+.subject__cont > main h2 {
+  text-align: start;
+  align-self: flex-start;
+  margin-left: 30px;
+  font-size: 1.8rem;
+}
+
+.subject__cont > main main {
+  margin-top: 0;
+}
+
+.subject.upload {
+  box-shadow: 0 2px 8px #f8f8f8;
+}

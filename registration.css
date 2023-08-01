@@ -16,7 +16,7 @@
 }
 
 .reg__cont {
-    top: 3vh;
+    top: 15vh;
 }
 
 input {
@@ -28,3 +28,19 @@ label {
     margin-bottom: 5px;
 }
 
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .reg__cont {
+        top: 10vh;
+    }
+    .welcome-text h2 {
+        font-size: 1.9rem;
+    }
+    .welcome-text h1 {
+        font-size: 4rem;
+    }
+    .form-control {
+        width: 100%;
+    }
+    
+}

@@ -1,41 +1,41 @@
 /*login page*/
 input {
-  border-radius: 4px !important;
-  outline: none !important;
-}
+    border-radius: 4px !important;
+    outline: none !important;
+  }
+  
+  
+  .login__cont {
+      top: 15vh;
+  }
+  .divider:after,
+  .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+  }
+  .h-custom {
+  height: calc(100% - 73px);
+  }
 
+  
 
-.login__cont {
-    top: 3vh;
-}
-.divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
-}
-.h-custom {
-height: calc(100% - 73px);
-}
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
-}
-}
-.link-register-btn{
-  color: var(--pink-red)
-}
-.link-register-btn:hover{
-  color: var(--pink)
-}
-.header-h1{
-  font-size: 6rem;
-  color: var(--deep-blue-2);
-}
-@media(max-width:768px) {
+  @media (max-width: 600px) {
+  .h-custom {
+  height: 100%;
+  }
+  
+  .link-register-btn{
+    color: var(--pink-red)
+  }
+  .link-register-btn:hover{
+    color: var(--pink)
+  }
   .header-h1{
-      font-size: 3rem;
-      text-align: center;
-}
-}
+    font-size: 6rem;
+    color: var(--deep-blue-2);
+    font-size: 3rem;
+    text-align: center;
+  }
+  }

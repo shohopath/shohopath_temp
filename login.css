@@ -32,10 +32,13 @@ input {
   .link-register-btn:hover{
     color: var(--pink)
   }
-  .header-h1{
-    font-size: 6rem;
-    color: var(--deep-blue-2);
-    font-size: 3rem;
-    text-align: center;
-  }
+  .login__cont {
+    top: 10vh;
+}
+.welcome-text h2 {
+    font-size: 1.9rem;
+}
+.welcome-text h1 {
+    font-size: 4rem;
+}
   }

@@ -237,70 +237,7 @@
     margin-top: -20px;
   }
 
-  .upload header img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-  }
 
-  .upload header .upload-type {
-    font-size: 0.75rem;
-    padding: 3px 8px;
-  }
-
-  .upload footer>.top {
-    padding: 5px 10px;
-  }
-
-  .upload footer>.top h4 {
-    font-size: .7rem
-  }
-
-  .upload footer>.top p {
-    font-size: .45rem
-  }
-
-  .upload footer>.bottom {
-    padding: 8px 10px;
-  }
-
-  .upload footer>.bottom>.left {
-  }
-
-  .upload footer>.bottom .left img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .upload footer>.bottom>.left>.right {
-    margin-left: 5px;
-    width: 80%;
-  }
-
-  .upload footer>.bottom>.left>.right h4 {
-    font-size: .7rem;
-    font-weight: 400;
-  }
-
-  .upload footer>.bottom>.left>.right p {
-    font-size: .45rem;
-    width: 70%;
-
-  }
-
-  .upload footer>.bottom>.right {
-    gap: 2px;
-    /* display:inline; */
-  }
-
-  .upload footer>.bottom>.right p {
-    font-size: .5rem;
-  }
-
-  .upload footer>.bottom>.right svg {
-    width: 17.5px;
-    height: 17.5px;
-  }
 
   .home_small-cont>main .show-more {
     display: none;

@@ -671,10 +671,12 @@ cursor: pointer;
 
 .upload footer>.bottom>.left>.right p {
   font-size: 0.7rem;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: visible;
+  white-space: normal;
 }
+
 
 
 .upload footer>.bottom>.right {

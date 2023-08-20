@@ -68,10 +68,12 @@
         justify-content:space-evenly;
     }
     .category__select {
-        margin-left: 2px !important;
+        margin-left: 10px !important;
     }
+    
     .category__select button {
         font-size: .9rem;
+        padding: 10px 15px !important;
     }
     .subject__cont main header .bottom {
         margin-right: 0px !important;

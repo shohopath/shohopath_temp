@@ -38,6 +38,7 @@
     align-items: center;
     width: 55%;
     gap: 20px;
+    margin-top: 20px;
 }
 .top_box {
     display: flex;
@@ -46,51 +47,10 @@
     width: 400%;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 600px) {
-    .subject__cont header .right {
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-        margin: 10px auto;
-    }
-    
-    .top_box {
-        display: flex;
-        flex-direction: row;
-        width: 200%;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        
-    }
-    .subject__cont main header {
-        justify-content:space-evenly;
-    }
-    .category__select {
-        margin-left: 10px !important;
-    }
-    
-    .category__select button {
-        font-size: .9rem;
-        padding: 10px 15px !important;
-    }
-    .subject__cont main header .bottom {
-        margin-right: 0px !important;
-        right:-39px;
-    }
-    .subject__cont main header .bottom label {
-        font-size: .9rem;
-        margin-right: 0px !important;
-
-    }
-    .subject__cont main header .bottom select {
-        font-size: .6rem;
-    }
-}
 
 .subject__cont header .right > div {
     margin: 0 !important;
+    margin-top: ;
 }
 
 .subject__cont header .right .left {
@@ -108,6 +68,9 @@
 
 .info-box {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .top__small-box {
@@ -115,17 +78,19 @@
     border-radius: 12px;
 }
 
-.top__small-box.bottom {
-    width: 200% !important;
+.completion-box {
     text-align: center;
+    width: 70%;
 }
 
-.top__small-box.bottom h4 {
-    font-size: 1.2rem;
+.completion-box h4 {
+    /* width: 60%; */
 }
+
 
 .completion_buttons {
-    margin-top: 15px;
+    top: 5px;
+    text-align: center;
 }
 
 .completion_buttons {
@@ -143,25 +108,24 @@
     opacity: 40%;
 }
 
-.subject__cont main {
-    margin-top: 20px;
+.subject__cont > main {
+    margin-top: 60px;
 }
 
 .subject__cont main header {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .category__select {
-    margin-top: 10px;
-    align-self: flex-start;
-    margin-left: 40px;
+    font-size: 1.2rem;
+    margin-top: 0;
 }
 
 .subject__cont main header .bottom {
-    align-self: flex-end;    
     width: fit-content;
     margin: 0 !important;
     padding: 0;
@@ -177,8 +141,93 @@
 
 .subject__cont main header .bottom select {
     padding: 4px 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     border-color: var(--pink);
-    
 }
+
+
+.subjects {
+    margin-top: 20px !important;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .header-text-2 {
+        font-size: 1.2rem;
+    }
+
+    .subject__cont header .right {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: 10px auto;
+    }
+    
+    .top_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 200%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .info-box {
+        width: 48% !important;
+        font-size: 0.9rem;
+    }
+
+    .completion-box {
+        width: 98% !important;
+    }
+
+    .completion-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .completion_buttons {
+        top: 0 !important;
+    }
+
+    .subject__cont main header {
+        width: 95%;
+        justify-content: space-between;
+        /* justify-content:space-evenly;
+        display: flex; */
+    }
+    .category__select {
+    }
+    
+    .category__select button {
+        font-size: .8rem;
+        padding: 8px 20px !important;
+    }
+
+    .category__select button:nth-child(1) {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .category__select button:nth-child(2) {
+        border-radius: 0 10px 10px 0;
+    }
+
+
+    .subject__cont main header .bottom {
+        margin-right: 0px !important;
+        /* right:-39px; */
+    }
+    .subject__cont main header .bottom label {
+        font-size: .9rem;
+        margin-right: 0px !important;
+
+    }
+    .subject__cont main header .bottom select {
+        font-size: .6rem;
+        border-radius: 10px;
+    }
+}
+
 

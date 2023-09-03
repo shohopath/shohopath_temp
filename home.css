@@ -60,7 +60,7 @@
   background: var(--deep-blue);
   border: none;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   transition: none;
 }
 
@@ -333,6 +333,10 @@
     padding: 0px 0px 0px 0px;
   }
 
+}
+
+.footer_cont > header {
+  top: 2px;
 }
 
 .footer_cont > header svg {

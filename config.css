@@ -88,8 +88,8 @@ nav {
 .category__select button {
   background: #fff;
   border: none;
-  font-size: 1.5rem;
-  padding: 10px 25px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
   border-radius: 15px 0 0 15px;
   text-transform: uppercase;
 
@@ -301,7 +301,8 @@ nav a {
 .progress_cont {
   display: flex;
   align-items: center;
-  /* width: 80% !important; */
+  justify-content: center;
+  width: 95% !important;
 }
 
 .progress_cont p {
@@ -672,9 +673,10 @@ cursor: pointer;
 .upload footer>.bottom>.left>.right p {
   font-size: 0.7rem;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: visible;
+  white-space: nowrap !important;
+  overflow: hidden;
   white-space: normal;
+  width: 80% !important;
 }
 
 

@@ -31,6 +31,10 @@
     margin-top: 10px;
 }
 
+.info-box>div:nth-child(1) {
+    margin-top: 0 !important;
+}
+
 .info-box div p {
     display: inline-block;
 }

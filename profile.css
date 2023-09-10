@@ -154,6 +154,8 @@ body > main {
   display: flex;
   width: 90%;
   margin: 0 auto 30px auto;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 
@@ -174,9 +176,21 @@ body > main {
 
 .uploads-list ul {
   display: flex;
-  gap: 30px;
+  gap: 30px 0;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.upload {
+  width: 23%;
+}
+
+.upload footer>.bottom>.left {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .profile__uploads header h2 {
   color: var(--deep-blue-2);
@@ -323,6 +337,14 @@ body > main {
     width: 80%;
   }
 
+  .upload__subject {
+    font-size: 0.85rem !important;
+  }
+
+  .upload__chapter {
+    font-size: 0.55rem !important;
+  }
+
   .upload footer>.bottom>.left>.right {
     width: 85%;
   }
@@ -371,4 +393,24 @@ body > main {
 
   }
 
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .profile-header {
+    padding: 20px;
+  }
+
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Name {
+    font-size: 2.2rem !important;
+  }
+
+  .College {
+    font-size: 1rem;
+  }
 }

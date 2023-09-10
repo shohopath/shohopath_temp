@@ -41,6 +41,14 @@ height: 100%;
 margin: 0;
 }
 
+.unfinished-dots {
+  text-overflow: ellipsis;
+  white-space: nowrap !important;
+  overflow: hidden;
+  white-space: normal;
+  width: 100% !important;
+}
+
 :root{
 --sky-blue: #2DAAE1;
 --light-sky-blue: #EFF3FF;
@@ -516,6 +524,7 @@ nav a {
 /* UPLOAD */
 .upload {
   width: 23%;
+  min-width: 280px;
   border-radius: 12px;
   box-shadow: 0 4px 7px #fff;
   overflow: hidden;
@@ -660,10 +669,16 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 70%;
 }
 
 .upload footer>.bottom>.left>.right h4 {
   font-size: 1.1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap !important;
+  overflow: hidden;
+  white-space: normal;
+  width: 100% !important;
 }
 
 .upload footer>.bottom>.left>.right h4:hover {
@@ -676,7 +691,7 @@ cursor: pointer;
   white-space: nowrap !important;
   overflow: hidden;
   white-space: normal;
-  width: 80% !important;
+  width: 100% !important;
 }
 
 
@@ -809,6 +824,15 @@ cursor: pointer;
   padding: 10px;
 }
 
+/* .upload_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+} */
 
 
 .upload_chapter ul {
@@ -877,7 +901,7 @@ cursor: pointer;
 .left img {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-right: 0;
   border-radius: 50%;
 }
 
@@ -1160,6 +1184,10 @@ cursor: pointer;
     gap: 10px;
   }
 
+  .upload {
+    min-width: 150px;
+  }
+
   .upload header img {
     height: 200px;
     width: 100%;
@@ -1244,7 +1272,67 @@ cursor: pointer;
   .upload_chapter li {
     width: 45%;
   }
-  
+
+  .upload__class footer > .top .right{
+    height: 1em;
+    width: 50%;
+    position: absolute;
+  width: max-content;
+  top: -1em;
+  right: 0;
+  background: #fff;
+  padding: 4px;
+  }
+
+  .rating svg {
+    width: 10px !important; 
+  }
+}
+
+
+@media screen and (max-width: 1270px) and (min-width: 600px) {
+  .upload {
+    width: 32% !important;
+    min-width: 0 !important;
+}
+
+  .upload_list {
+      gap: 25px 2% !important;
+      justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .upload footer>.top h4 {
+    font-size: 1.3rem;
+  }
+
+  .upload footer>.bottom .left img {
+    margin-right: 0 !important;
+  }
+
+  .upload footer>.bottom>.right {
+    gap: 2px !important;
+  }
+
+  .upload footer>.bottom {
+    padding: 15px 8px;
+  }
+}
+
+
+
+.sign-up_text {
+  font-size: 2.75rem !important;
+  color: var(--deep-blue-2);
+  margin-bottom: 20px !important;
+}
+
+
+
+/* RATING */
+@media screen and (max-width: 1400px) {
   .upload__class footer > .top .right{
     height: 1em;
     width: 50%;
@@ -1262,19 +1350,9 @@ cursor: pointer;
   }
 
   .rating svg {
-    width: 10px !important; 
+    width: 15px !important; 
   }
-  
 }
-
-
-.sign-up_text {
-  font-size: 2.75rem !important;
-  color: var(--deep-blue-2);
-  margin-bottom: 20px !important;
-}
-
-
 
 
 
